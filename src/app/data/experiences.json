@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Computer Science Engineer",
+    "company": {
+      "name": "Zum Web",
+      "url": "https://zum-web.ch/",
+      "logo": "/logo/zumweb.png",
+      "location": "Marrakech, Morocco"
+    },
+    "type": "Hybrid",
+    "startedAt": "May 2024",
+    "endedAt": "July 2024",
+    "employment_type": "End Of Year Internship",
+    "skills": ["Django", "Python", "BERT", "NLP", "BeautifulSoup", "GitHub"],
+    "overview": "Developing a platform with Django, featuring three main functionalities: generating relevant keywords and phrases for a given topic along with their intention and search volume, analyzing web pages to assess their compliance with SEO rules, and generating meta-descriptions for various content."
+  },
+  {
+    "title": "Mobile Developer",
+    "company": {
+      "name": "Adria Business & Technology",
+      "url": "https://adria-bt.com/en/",
+      "logo": "/logo/adria.png",
+      "location": "Casablanca, Morocco"
+    },
+    "type": "Hybrid",
+    "startedAt": "Feb 2024",
+    "endedAt": "Present",
+    "employment_type": "End Of Study Internship",
+    "skills": ["Xcode", "Swift", "SwiftUI", "REST APIs"],
+    "overview": ""
+  }
+]

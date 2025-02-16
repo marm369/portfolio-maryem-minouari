@@ -1,0 +1,108 @@
+[
+  {
+    "title": "G-PAIE . Payroll Management Platform",
+    "slug": "G-PAIE-payroll-management-platform",
+    "excerpt": "Full-stack web app for managing organizational payroll processes with PHP, Bootstrap and MySQL.",
+    "overview": "Developed full-stack web applications for managing payroll processes within an organization.",
+    "image": "/projects/gpaie.png",
+    "category": "Web Application",
+    "timeline": {
+      "start": "May 2023",
+      "end": "Jun 2023"
+    },
+    "featured": true,
+    "features": [
+      "User authentication and authorization for secure access.",
+      "Employee management with detailed profiles and salary information.",
+      "Payroll processing with automated calculations and tax deductions."
+    ],
+    "technologies": ["PHP", "Bootstrap", "jQuery", "MySQL"],
+    "team": [
+      {
+        "name": "Maryem Minouari",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/marm369"
+      },
+      {
+        "name": "Meriem Oulja",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/merylee924"
+      },
+      {
+        "name": "Nassima Chtouki",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com"
+      },
+      {
+        "name": "Ibtissam Abdouni",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com"
+      }
+    ],
+    "tags": ["PHP", "Bootstrap", "jQuery", "MySQL"],
+    "github": "https://github.com/marm369/GestionPaie"
+  },
+  {
+    "title": "Checkers Game",
+    "slug": "checkers-game",
+    "excerpt": "Desktop Checkers game developed with C and GTK+ for a rich graphical user experience.",
+    "overview": "Developed desktop game \"Checkers\" using C programming language and GTK graphical user interface.",
+    "image": "/projects/checkers.png",
+    "category": "Desktop Game",
+    "timeline": {
+      "start": "Mar 2023",
+      "end": "May 2023"
+    },
+    "featured": true,
+    "technologies": ["C Programming", "GTK+"],
+    "features": [
+      "Classic Checkers gameplay with a rich graphical user interface.",
+      "Single-player mode against AI for challenging gameplay.",
+      "Two-player mode for competitive fun.",
+      "AI with varying difficulty levels to suit all players.",
+      "AI vs AI mode for automated gameplay."
+    ],
+    "team": [
+      {
+        "name": "Maryem Minouari",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/marm369"
+      },
+      {
+        "name": "Meriem Oulja",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/merylee924"
+      }
+    ],
+    "tags": ["C", "GTK+", "Algorithms", "Data Structures"],
+    "github": "https://github.com/marm369/checkers-game"
+  },
+  {
+    "title": "Tic-Tac-Toe Game",
+    "slug": "tic-tac-toe-game",
+    "excerpt": "A desktop Tic-Tac-Toe game developed with Java and JavaFX.",
+    "overview": "Developed a desktop Tic-Tac-Toe game using Java and JavaFX, implementing the Minimax algorithm for AI decision-making and ensuring an engaging user experience.",
+    "image": "/projects/xo.png",
+    "category": "Desktop Game",
+    "timeline": {
+        "start": "Mar 2023",
+        "end": "May 2023"
+    },
+    "featured": true,
+    "technologies": ["Java", "JavaFX", "CSS", "Algorithms"],
+    "features": [
+        "Classic Tic-Tac-Toe gameplay with a modern graphical user interface.",
+        "Single-player mode against an AI opponent using the Minimax algorithm.",
+        "Two-player mode for local competitive gameplay."
+    ],
+    "team": [
+        {
+            "name": "Maryem Minouari",
+            "role": "Software Engineering Student at FST Mohammedia - UH2C",
+            "github": "https://github.com/marm369"
+        }
+    ],
+    "tags": ["Java", "JavaFX", "CSS", "Algorithms"],
+    "github": "https://github.com/marm369/XO_MiniMax_JavaFX"
+}
+]

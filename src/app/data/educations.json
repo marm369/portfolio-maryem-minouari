@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Software Engineering and Computer Systems Integration",
+    "type": "Engineering Degree",
+    "school": {
+      "name": "Faculty of Sciences and Technologies",
+      "logo": "/logo/fstm.jpeg",
+      "university": "Hassan II University",
+      "city": "Mohammedia"
+    },
+    "startedAt": "2022",
+    "endedAt": "2025"
+  },
+  {
+    "title": "Mathematics, Computer Science, Physics and Chemistry",
+    "type": "Diploma of University Studies in Science and Technology",
+    "school": {
+      "name": "Faculty of Science and Technology",
+      "logo": "/logo/fstg.jpeg",
+      "university": "Cadi Ayyad University",
+      "city": "Marrakech"
+    },
+    "startedAt": "2020",
+    "endedAt": "2022"
+  },
+  {
+    "title": "Physical Sciences, French option",
+    "type": "Baccalaureate in Physical Sciences",
+    "school": {
+      "name": "Al Khawarizmi High School",
+      "logo": "/logo/high-school.jpeg",
+      "city": "Marrakech"
+    },
+    "startedAt": "2019",
+    "endedAt": "2020"
+  }
+]

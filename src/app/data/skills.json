@@ -1,0 +1,103 @@
+[
+  {
+    "name": "Django",
+    "icon": "/icons/dj.png",
+    "featured": true
+  },
+  {
+    "name": "React",
+    "icon": "/icons/react.gif",
+    "featured": true
+  },
+  {
+    "name": "ASP.NET",
+    "icon": "/icons/asp.net.png",
+    "featured": true
+  },
+  {
+    "name": "Spring Boot",
+    "icon": "/icons/spring-boot.png",
+    "featured": true
+  },
+  {
+    "name": "Jakarta EE",
+    "icon": "/icons/jakarta-ee.png",
+    "featured": true
+  },
+  {
+    "name": "Docker",
+    "icon": "/icons/docker.png",
+    "featured": true
+  },
+  {
+    "name": "Git",
+    "icon": "/icons/git.png",
+    "featured": true
+  },
+  {
+    "name": "MongoDB",
+    "icon": "/icons/mongodb.png",
+    "featured": true
+  },
+  {
+    "name": "Flutter",
+    "icon": "/icons/flutter.png",
+    "featured": true
+  },
+  {
+    "name": "PostgreSQL",
+    "icon": "/icons/postgresql.gif",
+    "featured": true
+  },
+  {
+    "name": "Neo4j",
+    "icon": "/icons/neo4j.png",
+    "featured": true
+  },
+  {
+    "name": "Oracle",
+    "icon": "/icons/oracle.png",
+    "featured": true
+  },
+  {
+    "name": "MySQL",
+    "icon": "/icons/mysql.png",
+    "featured": true
+  },
+  {
+    "name": "SQL",
+    "icon": "/icons/sql.png",
+    "featured": true
+  },
+  {
+    "name": "TensorFlow",
+    "icon": "/icons/tensorflow.png",
+    "featured": true
+  },
+  {
+    "name": "Scikit learn",
+    "icon": "/icons/scikit-learn.png",
+    "featured": true
+  },
+  {
+    "name": "Python",
+    "icon": "/icons/python.gif",
+    "featured": true
+  },
+ 
+  {
+    "name": "Java",
+    "icon": "/icons/java.png",
+    "featured": true
+  },
+  {
+    "name": "C/C++",
+    "icon": "/icons/c-cpp.webp",
+    "featured": true
+  }, 
+  {
+    "name": "UML",
+    "icon": "/icons/uml.png",
+    "featured": true
+  }
+]
