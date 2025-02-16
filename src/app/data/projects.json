@@ -104,5 +104,118 @@
     ],
     "tags": ["Java", "JavaFX", "CSS", "Algorithms"],
     "github": "https://github.com/marm369/XO_MiniMax_JavaFX"
+},
+{
+  "title": "Rental Car Management App",
+  "slug": "rental-car-management-app",
+  "excerpt": "A rental car management application developed using Java and Swing.",
+  "overview": "This project is a car rental management application developed in Java and Swing. It enables the management of available vehicles, customers, and their reservations.",
+  "image": "/projects/rental-car-app.png",
+  "category": "Desktop Application",
+  "timeline": {
+    "start": "Dec 2023",
+    "end": "Dec 2023"
+  },
+  "featured": true,
+  "technologies": ["Java", "Swing"],
+  "features": [
+    "Add vehicles to the rental fleet.",
+    "Remove vehicles from the fleet.",
+    "Manage customers with the ability to add new clients.",
+    "Search for available vehicles based on criteria (brand, price, production date).",
+    "Process vehicle returns after the rental period."
+  ],
+  "team": [
+    {
+      "name": "Maryem Minouari",
+      "role": "Software Engineering Student at FST Mohammedia - UH2C",
+      "github": "https://github.com/marm369"
+    },
+    {
+      "name": "Meriem Oulja",
+      "role": "Software Engineering Student at FST Mohammedia - UH2C",
+      "github": "https://github.com/merylee924"
+    }
+  ],
+  "tags": ["Java", "Swing"],
+  "github": "https://github.com/marm369/LocationVoiture"
+},
+{
+  "title": "Busway Ticket Chatbot",
+  "slug": "busway-ticket-chatbot",
+  "excerpt": "Innovative web app for seamless busway ticket reservations, using Neo4j to manage complex data relationships.",
+  "overview": "The Busway Ticket Chatbot is a cutting-edge web application developed as part of the Object Technology/IoT Workshop. It simplifies busway ticket reservations by leveraging a Neo4j graph database to efficiently manage complex data relationships, such as bus schedules, stations, and drivers. This project enhances the user experience by incorporating an AIML-powered chatbot, enabling a conversational interface for booking tickets and obtaining travel information.\n\nThe goal was to build a system that offers users a seamless, intuitive, and engaging booking experience while maintaining sophisticated backend data management. The chatbot interacts with users conversationally, transforming the traditional booking process into an easy, interactive journey.",
+  "image": "/projects/busway-ticket-chatbot.png",
+  "category": "Desktop Application",
+  "timeline": {
+    "start": "Feb 2024",
+    "end": "Mar 2024"
+  },
+  "featured": true,
+  "technologies": ["Spring Boot", "Neo4j", "AIML", "Docker"],
+  "features": [
+    "Trip Visualization: Users can explore available trips with detailed route information, including departure and arrival times.",
+    "Online Reservation System: Provides a hassle-free online ticket booking experience, available 24/7.",
+    "Dynamic Data Management with Neo4j: The system utilizes Neo4j to manage relationships between buses, drivers, and stations, ensuring accurate data and real-time updates.",
+    "AIML-Powered Chatbot: The chatbot offers a conversational interface, making ticket booking more engaging and personal."
+  ],
+  "team": [
+    {
+      "name": "Maryem Minouari",
+      "role": "Software Engineering Student at FST Mohammedia - UH2C",
+      "github": "https://github.com/marm369"
+    },
+    {
+      "name": "Meriem Oulja",
+      "role": "Software Engineering Student at FST Mohammedia - UH2C",
+      "github": "https://github.com/merylee924"
+    }
+  ],
+  "tags": ["Spring Boot", "Neo4j", "AIML", "Docker"],
+  "github": "https://github.com/marm369/Busway"
+},
+{
+  "title": "Centralization and Classification of Chicago City Traffic",
+  "slug": "centralization-and-classification-of-chicago-city-traffic",
+  "excerpt": "Web portal for analyzing and visualizing traffic centrality in Chicago, developed during Object/IoT Technologies workshop.",
+  "overview": "The Centralization and Classification of Chicago City Traffic is a web-based portal built as part of the Object/IoT Technologies workshop. This project offers dynamic traffic analysis by leveraging modern mapping tools and clustering algorithms to visualize traffic flows in Chicago City. Users can explore traffic data through interactive maps, filter it by time slots, and uncover critical insights about central traffic patterns.\n\nThe system makes use of AGNES clustering to classify traffic flows efficiently, along with Leaflet.js to visualize it through interactive maps. Its responsive design ensures accessibility across devices, delivering a seamless experience for global users with multi-language support.",
+  "image": "/projects/traffic-centrality.png",
+  "category": "Web Portal",
+  "timeline": {
+    "start": "Feb 2024",
+    "end": "Mar 2024"
+  },
+  "featured": true,
+  "technologies": ["React.js", "Leaflet", "React-Leaflet", "Bootstrap", "JSON", "Python", "AGNES", "Docker"],
+  "features": [
+    "Interactive Map Visualization: Users can zoom and pan through traffic maps for a detailed view of NYC traffic patterns.",
+    "Advanced Data Filters: Filter traffic data by year, month, day, and time slots to explore trends across different timeframes.",
+    "Color-Coded Clusters: Traffic clusters are visually represented using color codes to highlight areas of congestion or smooth traffic.",
+    "Real-Time Traffic Flow Insights: Clickable map markers reveal detailed traffic information and central points."
+  ],
+  "team": [
+    {
+      "name": "Maryem Minouari",
+      "role": "Software Engineering Student at FST Mohammedia - UH2C",
+      "github": "https://github.com/marm369"
+    },
+    {
+      "name": "Meriem Oulja",
+      "role": "Software Engineering Student at FST Mohammedia - UH2C",
+      "github": "https://github.com/merylee924"
+    }, 
+    {
+      "name": "Aya Bourmaila",
+      "role": "Software Engineering Student at FST Mohammedia - UH2C",
+      "github": "https://github.com/marm369"
+    },
+    {
+      "name": "Salma Ikizbi",
+      "role": "Software Engineering Student at FST Mohammedia - UH2C",
+      "github": "https://github.com/merylee924"
+    }
+  ],
+  "tags": ["React.js", "Leaflet", "AGNES"],
+  "github": "https://github.com/marm369/CartographieCentralit-"
 }
 ]
