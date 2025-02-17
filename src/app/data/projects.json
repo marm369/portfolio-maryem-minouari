@@ -186,7 +186,7 @@
     "end": "Mar 2024"
   },
   "featured": true,
-  "technologies": ["React.js", "Leaflet", "React-Leaflet", "Bootstrap", "JSON", "Python", "AGNES", "Docker"],
+  "technologies": ["C++", "Leaflet", "Bootstrap", "JSON", "Python", "K-means","A*"],
   "features": [
     "Interactive Map Visualization: Users can zoom and pan through traffic maps for a detailed view of NYC traffic patterns.",
     "Advanced Data Filters: Filter traffic data by year, month, day, and time slots to explore trends across different timeframes.",
@@ -207,15 +207,47 @@
     {
       "name": "Aya Bourmaila",
       "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/marm369"
+      "github": "https://github.com"
     },
     {
-      "name": "Salma Ikizbi",
+      "name": "Salma Ikzbi",
       "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/merylee924"
+      "github": "https://github.com/ikezbi"
     }
   ],
-  "tags": ["React.js", "Leaflet", "AGNES"],
+  "tags": ["C++", "Leaflet","Python", "K-means","A*"],
   "github": "https://github.com/marm369/CartographieCentralit-"
+},
+{
+  "title": "Sudoku Game",
+  "slug": "sudoku-game-gtk",
+  "excerpt": "Application de résolution de Sudoku développée en C++ avec GTK+, offrant génération aléatoire de grilles et assistance interactive.",
+  "overview": "Sudoku Game est une application de résolution de Sudoku développée en C++ avec l'outil d'interface graphique GTK+. Elle permet aux utilisateurs de jouer à des grilles de Sudoku générées aléatoirement et propose différentes fonctionnalités pour améliorer l'expérience utilisateur. L'application offre plusieurs niveaux de difficulté, une aide interactive et la possibilité de sauvegarder la progression.",
+  "image": "/projects/sudoku.png",
+  "category": "Desktop Application",
+  "timeline": {
+    "start": "Mar 2024",
+    "end": "Mar 2024"
+  },
+  "featured": true,
+  "technologies": ["C++", "GTK+"],
+  "features": [
+    "Trois niveaux de difficulté : Facile, Moyen, Difficile.",
+    "Génération aléatoire de grilles de Sudoku.",
+    "Sauvegarde et chargement de la progression du jeu.",
+    "Fonction d'indice pour aider les joueurs en difficulté.",
+    "Résolution automatique des grilles pour vérification.",
+    "Interface intuitive avec prise en charge des interactions utilisateur."
+  ],
+  "team": [
+    {
+      "name": "Maryem Minouari",
+      "role": "Software Engineering Student at FST Mohammedia - UH2C",
+      "github": "https://github.com/marm369"
+    }
+  ],
+  "tags": ["C++", "GTK+"],
+  "github": "https://github.com/marm369/SudokuGtk"
 }
+
 ]
