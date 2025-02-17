@@ -3,54 +3,63 @@ import { ExperienceProps } from "@/lib/types";
 
 const Experience = ({ data: experience }: { data: ExperienceProps }) => {
   return (
-    <div className="px-4 py-2 overflow-hidden bg-blue-100 rounded-lg shadow-md dark:bg-gray-800 flex flex-col">
+    <div className="px-6 py-4 overflow-hidden bg-blue-50 dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out flex flex-col space-y-4 border border-blue-100 dark:border-gray-700">
+      {/* Titre de l'expérience */}
       <span
-        className="block my-2 text-xl font-semibold text-blue-600 transition-colors duration-300 transform dark:text-white hover:text-gray-600 hover:underline">
+        className="block text-2xl font-bold text-blue-700 dark:text-blue-300 hover:text-blue-800 dark:hover:text-blue-200 transition-colors duration-300 cursor-pointer hover:underline">
         {experience.title}
       </span>
-      <div className="flex items-center">
-        <div className="flex items-start">
+
+      {/* Informations sur l'entreprise */}
+      <div className="flex items-center space-x-4">
+        {/* Logo de l'entreprise */}
+        <a href={experience.company?.url} target="_blank" rel="noopener noreferrer" className="group">
+          <img
+            className="object-cover w-12 h-12 rounded-full border-2 border-blue-200 dark:border-gray-600 group-hover:border-blue-400 dark:group-hover:border-blue-300 transition-all duration-300"
+            src={experience.company?.logo ?? '/logo/company-default.png'}
+            alt="Company Logo"
+            loading="lazy"
+          />
+        </a>
+
+        {/* Détails de l'entreprise */}
+        <div className="flex flex-col space-y-1">
           <a href={experience.company?.url} target="_blank" rel="noopener noreferrer">
-            <img className="object-cover w-10 h-10 rounded-full"
-                 src={experience.company?.logo ?? '/logo/company-default.png'}
-                 alt="Avatar"
-                 loading="lazy"
-            />
+            <h2 className="text-lg font-semibold text-blue-700 dark:text-blue-300 hover:text-blue-800 dark:hover:text-blue-200 transition-colors duration-300">
+              {experience.company?.name ?? ''}
+            </h2>
           </a>
-          <div className="mx-2">
-            <a href={experience.company?.url} target="_blank" rel="noopener noreferrer">
-              <h2 className="text-md font-medium text-blue-600 dark:text-blue-400" role="link">
-                {experience.company?.name ?? ''}
-              </h2>
-            </a>
-            <div>
-              <p className="text-xs text-gray-600 dark:text-gray-300">
-                {experience.employment_type ?? ''}
-              </p>
-              <p className="text-xs text-gray-600 dark:text-gray-300">
-                {experience.company?.location ? experience.company?.location : ''}
-                {experience.type && (experience.company?.location ? ' . ' : '') + experience.type}
-              </p>
-              <p className="text-xs text-gray-600 dark:text-gray-300">
-                {experience.startedAt} - {experience.endedAt}
-              </p>
-            </div>
+          <div className="text-sm text-gray-600 dark:text-gray-400">
+            <p>{experience.employment_type ?? ''}</p>
+            <p>
+              {experience.company?.location ? experience.company?.location : ''}
+              {experience.type && (experience.company?.location ? ' · ' : '') + experience.type}
+            </p>
+            <p>
+              {experience.startedAt} - {experience.endedAt}
+            </p>
           </div>
         </div>
       </div>
-      <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+
+      {/* Description de l'expérience */}
+      <p className="mt-2 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
         {experience.overview}
       </p>
-      <div className="mt-auto flex flex-wrap gap-1 justify-end">
+
+      {/* Compétences */}
+      <div className="mt-auto flex flex-wrap gap-2 justify-end">
         {experience.skills.map((skill, index) => (
-          <div key={index}
-               className="bg-blue-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-2 py-1 rounded-md text-xs">
+          <div
+            key={index}
+            className="bg-blue-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-3 py-1 rounded-full text-xs font-medium hover:bg-blue-300 dark:hover:bg-gray-600 transition-colors duration-300"
+          >
             {skill}
           </div>
         ))}
       </div>
     </div>
   );
-}
+};
 
 export default Experience;

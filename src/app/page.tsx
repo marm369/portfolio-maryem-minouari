@@ -337,13 +337,20 @@ export default function Home() {
           <h4 className="text-xl font-medium text-blue-500 dark:text-blue-400">
             Contact me
           </h4>
-          <Title>{`Interested to work together? Let's talk`}</Title>
+          <Title>{`Let's talk`}</Title>
         </div>
         <div className="grid grid-cols-1 gap-12 mt-8 lg:grid-cols-2">
           <div className="grid gap-4">
-            <p className="text-gray-500 dark:text-gray-400">
-              {`I'm available for freelance work. If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.`}
+            <p
+              className={`${
+                theme === "dark" ? "text-gray-300" : "text-gray-800"
+              }`}
+            >
+              I’m open to new opportunities. If you have a project in mind, need
+              assistance with something, or just want to connect, feel free to
+              reach out.
             </p>
+            <p className="text-gray-500 dark:text-gray-400"></p>
             <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
               <div>
                 <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">

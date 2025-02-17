@@ -14,9 +14,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     });
 
     const mailOptions = {
-      from: email,
-      to: process.env.EMAIL_RECEIVER,
-      replyTo: email,
+      from: process.env.EMAIL_USER,
+      to: email,
       subject: subject,
       text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage: ${message}\n\n\nMail sent from your portfolio website contact form`,
     };

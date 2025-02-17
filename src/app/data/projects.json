@@ -1,5 +1,5 @@
 [
-  {
+{
     "title": "G-PAIE . Payroll Management Platform",
     "slug": "G-PAIE-payroll-management-platform",
     "excerpt": "Full-stack web app for managing organizational payroll processes with PHP, Bootstrap and MySQL.",
@@ -41,8 +41,8 @@
     ],
     "tags": ["PHP", "Bootstrap", "jQuery", "MySQL"],
     "github": "https://github.com/marm369/GestionPaie"
-  },
-  {
+},
+{
     "title": "Checkers Game",
     "slug": "checkers-game",
     "excerpt": "Desktop Checkers game developed with C and GTK+ for a rich graphical user experience.",
@@ -76,8 +76,8 @@
     ],
     "tags": ["C", "GTK+", "Algorithms", "Data Structures"],
     "github": "https://github.com/marm369/checkers-game"
-  },
-  {
+},
+{
     "title": "Tic-Tac-Toe Game",
     "slug": "tic-tac-toe-game",
     "excerpt": "A desktop Tic-Tac-Toe game developed with Java and JavaFX.",
