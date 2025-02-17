@@ -221,8 +221,8 @@
 {
   "title": "Sudoku Game",
   "slug": "sudoku-game-gtk",
-  "excerpt": "Application de résolution de Sudoku développée en C++ avec GTK+, offrant génération aléatoire de grilles et assistance interactive.",
-  "overview": "Sudoku Game est une application de résolution de Sudoku développée en C++ avec l'outil d'interface graphique GTK+. Elle permet aux utilisateurs de jouer à des grilles de Sudoku générées aléatoirement et propose différentes fonctionnalités pour améliorer l'expérience utilisateur. L'application offre plusieurs niveaux de difficulté, une aide interactive et la possibilité de sauvegarder la progression.",
+  "excerpt": "A Sudoku-solving application developed in C++ with GTK+, featuring random grid generation and interactive assistance.",
+  "overview": "Sudoku Game is a Sudoku-solving application developed in C++ using the GTK+ graphical interface toolkit. It allows users to play randomly generated Sudoku grids and includes various features to enhance the user experience. The application offers multiple difficulty levels, interactive hints, and the ability to save progress.",
   "image": "/projects/sudoku.png",
   "category": "Desktop Application",
   "timeline": {
@@ -232,12 +232,12 @@
   "featured": true,
   "technologies": ["C++", "GTK+"],
   "features": [
-    "Trois niveaux de difficulté : Facile, Moyen, Difficile.",
-    "Génération aléatoire de grilles de Sudoku.",
-    "Sauvegarde et chargement de la progression du jeu.",
-    "Fonction d'indice pour aider les joueurs en difficulté.",
-    "Résolution automatique des grilles pour vérification.",
-    "Interface intuitive avec prise en charge des interactions utilisateur."
+    "Three difficulty levels: Easy, Medium, Hard.",
+    "Random Sudoku grid generation.",
+    "Save and load game progress.",
+    "Hint feature to assist players.",
+    "Automatic grid solving for verification.",
+    "User-friendly interface with interactive support."
   ],
   "team": [
     {
@@ -248,6 +248,153 @@
   ],
   "tags": ["C++", "GTK+"],
   "github": "https://github.com/marm369/SudokuGtk"
+},
+{
+  "title": "E-commerce Site",
+  "slug": "ecommerce-java-ee",
+  "excerpt": "A web-based e-commerce application developed using Java EE, enabling product inventory and order management.",
+  "overview": "This project is a web-based e-commerce application developed using Java EE, Servlets, and JSP. It allows merchants to efficiently manage their product inventory and enables customers to place orders online. The system includes stock management features for adding, modifying, and deleting products, as well as an order management system with a shopping cart and order validation.",
+  "image": "/projects/ecommerce.png",
+  "category": "Web Application",
+  "timeline": {
+    "start": "Apr 2024",
+    "end": "Apr 2024"
+  },
+  "featured": true,
+  "technologies": ["Java EE", "Servlets", "JSP", "MySQL"],
+  "features": [
+    "Inventory management: add, modify, and delete products.",
+    "Product listing and search by name or category.",
+    "Add products to the shopping cart with quantity adjustment.",
+    "Order placement and validation with customer details.",
+    "Order summary displaying purchased items and total cost.",
+    "User-friendly and responsive interface."
+  ],
+  "team": [
+    {
+      "name": "Maryem Minouari",
+      "role": "Software Engineering Student at FST Mohammedia - UH2C",
+      "github": "https://github.com/marm369"
+    }
+  ],
+  "tags": ["Java EE", "JSP", "Servlets", "MySQL"],
+  "github": "https://github.com/marm369/Ecommerce"
+},
+{
+  "title": "Rental Car App",
+  "slug": "rental-car-app",
+  "excerpt": "A car rental application where car owners can create their stores, add cars, and allow users to search, book, and contact owners for more information.",
+  "overview": "Rental Car App is a car rental platform where car owners can create their own stores and add cars for rent. Users can browse rental agencies by store, contact owners for details, and request car reservations. The app provides a filtering system to search for vehicles based on various criteria. It is developed with NestJS for the backend, React Native with Expo for the frontend, PostgreSQL as the database, Firebase for notifications, and WebSocket for real-time messaging.",
+  "image": "/projects/rental-car.png",
+  "category": "Mobile Application",
+  "timeline": {
+    "start": "Dec 2024",
+    "end": "Jan 2025"
+  },
+  "featured": true,
+  "technologies": ["NestJS", "React Native", "Expo", "PostgreSQL", "Firebase", "WebSocket"],
+  "features": [
+    "Car owners can create stores and add rental cars.",
+    "Users can browse agencies by store.",
+    "Contact car owners for more details.",
+    "Request car reservations directly through the app.",
+    "Advanced search and filtering system for finding cars.",
+    "Real-time messaging with WebSocket.",
+    "Push notifications using Firebase."
+  ],
+  "team": [
+    {
+      "name": "Maryem Minouari",
+      "role": "Software Engineering Student at FST Mohammedia - UH2C",
+      "github": "https://github.com/marm369"
+    },
+    {
+      "name": "Meriem Oulja",
+      "role": "Software Engineering Student at FST Mohammedia - UH2C",
+      "github": "https://github.com/merylee924"
+    }
+  ],
+  "tags": ["NestJS", "React Native", "PostgreSQL", "Firebase", "WebSocket"],
+  "github": "https://github.com/marm369/car_rental_app_front"
+},
+{
+  "title": "FitNest App",
+  "slug": "fitnest-app",
+  "excerpt": "A mobile application for discovering, joining, and organizing sports events, integrating geolocation, health tracking, and social interactions.",
+  "overview": "FitNest App is a sports and wellness application designed to help users find and participate in sports events based on their location and preferences. Users can create personalized profiles, join local sports groups, and receive recommendations for nearby events using advanced geolocation with PostGIS. The app also offers a personal dashboard, health tracking features (sleep, nutrition, and stress monitoring), and social interactions, enabling users to share their experiences. The platform is built with a Spring Boot backend, a Flutter frontend, and real-time data analytics tools.",
+  "image": "/projects/fitnest.png",
+  "category": "Mobile Application",
+  "timeline": {
+    "start": "Oct 2024",
+    "end": "Dec 2024"
+  },
+  "featured": true,
+  "technologies": ["Java", "Spring Boot", "PostgreSQL", "PostGIS", "Flutter", "JWT", "OAuth2"],
+  "features": [
+    "Search and participate in sports events based on location and preferences.",
+    "User profile creation and customization.",
+    "Advanced geolocation and tracking system using PostGIS for event recommendations.",
+    "Personal dashboard with event history and tailored recommendations.",
+    "Health and wellness tracking: sleep, nutrition, and stress monitoring with personalized suggestions.",
+    "Create and manage sports events.",
+    "Social interactions: create local sports groups and share experiences."
+  ],
+  "team": [
+    {
+      "name": "Maryem Minouari",
+      "role": "Software Engineering Student at FST Mohammedia - UH2C",
+      "github": "https://github.com/marm369"
+    },
+    {
+      "name": "Meriem Oulja",
+      "role": "Software Engineering Student at FST Mohammedia - UH2C",
+      "github": "https://github.com/merylee924"
+    },
+    {
+      "name": "Khaoula Abassi",
+      "role": "Software Engineering Student at FST Mohammedia - UH2C",
+      "github": "https://github.com/Wahya1"
+    },
+    {
+      "name": "Ouissal Allam",
+      "role": "Software Engineering Student at FST Mohammedia - UH2C",
+      "github": "https://github.com/Ouissal0"
+    }
+  ],
+  "tags": ["Spring Boot", "Flutter", "PostgreSQL", "PostGIS", "JWT", "OAuth2"],
+  "github": "https://github.com/marm369/fitnest_project"
+},
+{
+  "title": "Interface Builder",
+  "slug": "interface-builder-app",
+  "excerpt": "A desktop application for creating graphical user interfaces using GTK+ and generating XML-based layouts with FXML.",
+  "overview": "Interface Builder is a desktop application that enables users to design graphical user interfaces by adding, modifying, and organizing widgets such as buttons, input fields, and containers. The designed UI is structured hierarchically in an XML file while maintaining parent-child relationships. Users can visualize the interface, save the generated XML file, and open existing files for further modifications. The application is built with C and GTK+ for GUI rendering, using FXML for layout definition.",
+  "image": "/projects/interface-builder.png",
+  "category": "Desktop Application",
+  "timeline": {
+    "start": "May 2024",
+    "end": "Jun 2024"
+  },
+  "featured": true,
+  "technologies": ["C", "GTK+", "XML"],
+  "features": [
+    "Add widgets (buttons, inputs, containers, etc.) to the interface.",
+    "Modify widget properties such as size, position, and style.",
+    "Display and manage the hierarchy of UI components.",
+    "Real-time visualization of the designed interface.",
+    "Save the interface layout as an XML file.",
+    "Open and edit existing XML files to modify or add new widgets."
+  ],
+  "team": [
+    {
+      "name": "Maryem Minouari",
+      "role": "Software Engineering Student at FST Mohammedia - UH2C",
+      "github": "https://github.com/marm369"
+    }
+  ],
+  "tags": ["C", "GTK+", "XML"],
+  "github": "https://github.com/marm369/interface-builder"
 }
+
 
 ]
