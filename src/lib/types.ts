@@ -7,6 +7,8 @@ export interface ProjectProps {
   excerpt: string;
   overview: string;
   image: string;
+  images: string[];
+  video: string;
   features: string[];
   category: string;
   technologies: string[];

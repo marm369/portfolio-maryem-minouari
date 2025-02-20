@@ -139,6 +139,43 @@ export default function Project({ params }: { params: { slug: string } }) {
           </div>
         </div>
       </header>
+      {project.images && project.images.length > 0 && (
+        <section className="container px-6 py-12 mx-auto">
+          <Title>Screenshots</Title>
+          <div className="flex gap-4 mt-6 pb-4 overflow-x-scroll scrollbar-hide">
+            {project.images.map((image, index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 w-80 h-[600px] rounded-lg overflow-hidden shadow-lg bg-gray-100"
+              >
+                <img
+                  src={image}
+                  alt={`Screenshot ${index + 1}`}
+                  className="w-full h-full object-fill min-w-full min-h-full"
+                  style={{
+                    maxWidth: "100%",
+                    maxHeight: "100%",
+                    aspectRatio: "16/9",
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+      {project.video && (
+        <section className="container px-6 py-12 mx-auto">
+          <Title>Demo Video</Title>
+          <div className="mt-6 aspect-video w-full max-w-4xl mx-auto">
+            <iframe
+              src={project.video}
+              className="w-full h-full rounded-lg shadow-lg"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </section>
+      )}
       <section className="container px-6 py-4 mx-auto">
         <div className="xl:mt-12 lg:grid lg:grid-cols-2 lg:gap-12">
           <div className="lg:col-span-1 lg:sticky lg:top-24 lg:self-start">
