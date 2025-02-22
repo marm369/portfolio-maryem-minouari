@@ -63,7 +63,7 @@ export default function Project({ params }: { params: { slug: string } }) {
           </div>
           <div className="flex flex-col items-center justify-center w-full p-2 mt-6 lg:mt-0 lg:w-1/2">
             <img
-              className="w-full h-full lg:max-w-3xl rounded-xl responsive"
+              className="w-full h-full lg:max-w-3xl rounded-xl object-cover"
               src={project.image}
               alt={project.title}
             />
