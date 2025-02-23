@@ -303,9 +303,11 @@ export default function Home() {
               <CardSkeleton />
             </>
           ) : (
-            projects.map((project: ProjectProps, index: number) => (
-              <Project key={index} data={project} />
-            ))
+            projects
+              .slice(0, 6)
+              .map((project: ProjectProps, index: number) => (
+                <Project key={index} data={project} />
+              ))
           )}
         </div>
         <div className="flex justify-center">

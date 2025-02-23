@@ -9,6 +9,7 @@ export interface ProjectProps {
   image: string;
   images: string[];
   video: string;
+  dimension: number;
   features: string[];
   category: string;
   technologies: string[];

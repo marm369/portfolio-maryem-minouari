@@ -146,7 +146,11 @@ export default function Project({ params }: { params: { slug: string } }) {
             {project.images.map((image, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-80 h-[600px] rounded-lg overflow-hidden shadow-lg bg-gray-100"
+                className={`flex-shrink-0 rounded-lg overflow-hidden shadow-lg bg-gray-100 ${
+                  project.dimension === 0
+                    ? "w-80 h-[600px]"
+                    : "w-[700px] h-[400px]"
+                }`}
               >
                 <img
                   src={image}
