@@ -396,6 +396,8 @@
   "excerpt": "A rental car management application developed using Java and Swing.",
   "overview": "This project is a car rental management application developed in Java and Swing. It enables the management of available vehicles, customers, and their reservations.",
   "image": "/projects/rental-car-app.png",
+  "images": ["/projects/rental-car/add-car.png","/projects/rental-car/fetch-cars.png","/projects/rental-car/criteria-search.png","/projects/rental-car/return-car.png"],
+  "dimension": 1,
   "category": "Desktop Application",
   "timeline": {
     "start": "Dec 2023",
