@@ -37,6 +37,8 @@ export default function Home() {
   const [skills, setSkills] = useState([]);
   const [projects, setProjects] = useState([]);
   const [certificates, setCertificates] = useState([]);
+  const [count, setCount] = useState(0);
+
   const { theme } = useTheme();
   useEffect(() => {
     const fetchData = async () => {
@@ -60,6 +62,9 @@ export default function Home() {
         .then((res) => res.json())
         .then((data) => setCertificates(data))
         .finally(() => setCertificatesLoading(false));
+      await fetch("/api/visit", { method: "POST" })
+        .then((res) => res.json())
+        .then((data) => setCount(data.count));
     };
 
     fetchData().then(() => console.log("Data fetched"));
@@ -71,7 +76,9 @@ export default function Home() {
         <div className="container mx-auto px-6 py-12">
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <div className="lg:w-1/2 text-center lg:text-left mb-10 lg:mb-0">
-              <Title textClass="text-4xl lg:text-5xl font-bold mb-4 text-white">{`Hi, I'm Maryem MINOUARI`}</Title>
+              <Title textClass="text-4xl lg:text-5xl font-bold mb-4 text-white">
+                {`Hi, I'm Maryem MINOUARI`}
+              </Title>
               <h3 className="text-2xl mt-4 lg:text-3xl font-semibold mb-4 text-blue-300">
                 Computer Science Engineer
               </h3>
@@ -106,6 +113,13 @@ export default function Home() {
                 />
               </div>
             </div>
+          </div>
+
+          {/* Affichage du compteur de visites */}
+          <div className="mt-8 text-center">
+            <p className="text-gray-300 text-lg">
+              {count !== null ? `👀 ${count} visits` : "Loading visits..."}
+            </p>
           </div>
 
           <div className="mt-16">
