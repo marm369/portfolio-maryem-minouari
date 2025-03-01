@@ -323,6 +323,12 @@
   "excerpt": "Desktop Checkers game developed with C and GTK+ for a rich graphical user experience.",
   "overview": "Developed desktop game \"Checkers\" using C programming language and GTK graphical user interface.",
   "image": "/projects/checkers.png",
+  "images": ["/projects/checkers/game-start.jpg",
+             "/projects/checkers/settings.jpg",
+             "/projects/checkers/resume-game.jpg",
+             "/projects/checkers/player-name.jpg",
+             "/projects/checkers/game-board.jpg"],
+  "dimension":1,   
   "category": "Desktop Game",
   "timeline": {
     "start": "Mar 2023",

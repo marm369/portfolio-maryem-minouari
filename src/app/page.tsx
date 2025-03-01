@@ -37,7 +37,6 @@ export default function Home() {
   const [skills, setSkills] = useState([]);
   const [projects, setProjects] = useState([]);
   const [certificates, setCertificates] = useState([]);
-  const [count, setCount] = useState(0);
 
   const { theme } = useTheme();
   useEffect(() => {
@@ -62,9 +61,6 @@ export default function Home() {
         .then((res) => res.json())
         .then((data) => setCertificates(data))
         .finally(() => setCertificatesLoading(false));
-      await fetch("/api/visit", { method: "POST" })
-        .then((res) => res.json())
-        .then((data) => setCount(data.count));
     };
 
     fetchData().then(() => console.log("Data fetched"));
@@ -114,14 +110,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          {/* Affichage du compteur de visites */}
-          <div className="mt-8 text-center">
-            <p className="text-gray-300 text-lg">
-              {count !== null ? `👀 ${count} visits` : "Loading visits..."}
-            </p>
-          </div>
-
           <div className="mt-16">
             <FindMeCTA />
           </div>
@@ -347,7 +335,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-
       <section id="contact" className="container px-6 py-12 mx-auto">
         <div>
           <h4 className="text-xl font-medium text-blue-500 dark:text-blue-400">
