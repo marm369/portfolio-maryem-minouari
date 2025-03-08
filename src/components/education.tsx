@@ -1,4 +1,5 @@
 import { EducationProps } from "@/lib/types";
+import Image from "next/image";
 import React from "react";
 
 const Education = ({ data: education }: { data: EducationProps }) => {
@@ -12,7 +13,7 @@ const Education = ({ data: education }: { data: EducationProps }) => {
       </span>
       <div className="flex items-center space-x-3">
         <div className="flex-shrink-0">
-          <img
+          <Image
             className="w-12 h-12 rounded-full object-cover border-2 border-blue-200 dark:border-blue-600 hover:border-blue-500 transition-all duration-300"
             src={education.school?.logo || '/logo/company-default.png'}
             alt="School Logo"

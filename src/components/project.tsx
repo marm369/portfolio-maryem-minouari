@@ -1,13 +1,14 @@
 import { ProjectProps } from "@/lib/types";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Project = ({ data: project }: { data: ProjectProps }) => {
   return (
     <div className="group w-full bg-white rounded-2xl shadow-xl dark:bg-gray-800 flex flex-col overflow-hidden hover:shadow-2xl transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]">
       <div className="relative overflow-hidden">
         <Link href={`/projects/${project.slug}`}>
-          <img
+          <Image
             className="object-cover w-full h-64 transition-transform duration-500 group-hover:scale-105"
             src={project.image}
             alt={project.title}

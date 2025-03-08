@@ -79,8 +79,9 @@ export default function Home() {
                 Computer Science Engineer
               </h3>
               <p className="text-lg text-gray-300 mb-8">
-                Let's build innovative software solutions together and unlock
-                the full potential of technology.
+                {
+                  "Let's build innovative software solutions together and unlock the full potential of technology."
+                }
               </p>
               <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <button

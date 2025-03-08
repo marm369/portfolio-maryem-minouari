@@ -8,6 +8,7 @@ import NotFound from "next/dist/client/components/not-found-error";
 import Link from "next/link";
 import Title from "@/components/Title";
 import { ProjectProps } from "@/lib/types";
+import Image from "next/image";
 
 export default function Project({ params }: { params: { slug: string } }) {
   const [loading, setLoading] = useState(true);
@@ -62,7 +63,7 @@ export default function Project({ params }: { params: { slug: string } }) {
             </div>
           </div>
           <div className="flex flex-col items-center justify-center w-full p-2 mt-6 lg:mt-0 lg:w-1/2">
-            <img
+          <Image
               className="w-full h-full lg:max-w-3xl rounded-xl object-cover"
               src={project.image}
               alt={project.title}
@@ -152,7 +153,7 @@ export default function Project({ params }: { params: { slug: string } }) {
                     : "w-[700px] h-[400px]"
                 }`}
               >
-                <img
+                <Image
                   src={image}
                   alt={`Screenshot ${index + 1}`}
                   className="w-full h-full object-fill min-w-full min-h-full"

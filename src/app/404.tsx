@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function NotFound() {
@@ -28,7 +29,7 @@ export default function NotFound() {
         </div>
 
         <div className="relative w-full mt-12 lg:w-1/2 lg:mt-0">
-          <img className="w-full max-w-lg lg:mx-auto" src="/illustrations/404.svg" alt=""/>
+          <Image className="w-full max-w-lg lg:mx-auto" src="/illustrations/404.svg" alt=""/>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ExperienceProps } from "@/lib/types";
+import Image from 'next/image';
 
 const Experience = ({ data: experience }: { data: ExperienceProps }) => {
   return (
@@ -14,7 +15,7 @@ const Experience = ({ data: experience }: { data: ExperienceProps }) => {
       <div className="flex items-center space-x-4">
         {/* Logo de l'entreprise */}
         <a href={experience.company?.url} target="_blank" rel="noopener noreferrer" className="group">
-          <img
+          <Image
             className="object-cover w-12 h-12 rounded-full border-2 border-blue-200 dark:border-gray-600 group-hover:border-blue-400 dark:group-hover:border-blue-300 transition-all duration-300"
             src={experience.company?.logo ?? '/logo/company-default.png'}
             alt="Company Logo"
