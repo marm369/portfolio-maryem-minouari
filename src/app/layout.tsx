@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/react"
+import Script from "next/script";2
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -33,6 +34,19 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
+           {/* Google Analytics */}
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=G-W8Q5JF9Y2H`}
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-XXXXXXXXXX');
+            `}
+          </Script>
         {children}
         <Footer />
         <Analytics />
