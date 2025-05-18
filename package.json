@@ -22,7 +22,8 @@
     "react-toastify": "^10.0.5",
     "tailwind-merge": "^2.5.2",
     "tailwind-scrollbar-hide": "^2.0.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "googleapis": "^130.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
