@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 export const resumes = {
   english: "https://drive.google.com/file/d/11RQ19Vbp2g9IK8LQ4D5Fi3GCkFK2A1rD/view?usp=sharing",
-  french: "https://drive.google.com/file/d/1dkFwNBQH2rA9S0GXGnTWPA7jRJfvDJyO/view?usp=sharing",
+  french: "https://drive.google.com/file/d/1SjnA0R44Tm2YJYKGSvqGE2gyw-CwCR63/view?usp=share_link",
 }
 
 export const contact = {
