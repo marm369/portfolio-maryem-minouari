@@ -1,12 +1,16 @@
+import { NextApiRequest, NextApiResponse } from 'next';
 import { google } from 'googleapis';
 
-export default async function handler(req, res) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   if (req.method !== 'GET') {
     return res.status(405).json({ error: 'Method Not Allowed' });
   }
 
   try {
-    const credentials = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON);
+    const credentials = JSON.parse(process.env.GOOGLE_SERVICE_ACCOUNT_JSON!);
 
     const auth = new google.auth.GoogleAuth({
       credentials,
@@ -17,7 +21,8 @@ export default async function handler(req, res) {
       version: 'v1beta',
       auth: await auth.getClient(),
     });
-    const propertyId = process.env.GA_PROPERTY_ID;
+
+    const propertyId = process.env.GA_PROPERTY_ID!;
     const response = await analyticsDataClient.properties.runReport({
       property: propertyId,
       requestBody: {
@@ -32,7 +37,6 @@ export default async function handler(req, res) {
     });
 
     const visitors = response.data.rows?.[0]?.metricValues?.[0]?.value ?? '0';
-
     res.status(200).json({ visitors });
   } catch (error) {
     console.error('Analytics API error:', error);
