@@ -1,7 +1,10 @@
+import { NextApiRequest, NextApiResponse } from 'next';
 import { google } from 'googleapis';
-import type { NextApiRequest, NextApiResponse } from 'next';
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   if (req.method !== 'GET') {
     return res.status(405).json({ error: 'Method Not Allowed' });
   }
@@ -14,16 +17,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       scopes: 'https://www.googleapis.com/auth/analytics.readonly',
     });
 
-    const client = (await auth.getClient()) as any;
-
     const analyticsDataClient = google.analyticsdata({
       version: 'v1beta',
-      auth: client,
+      auth: (await auth.getClient()) as any, // Type workaround if needed
     });
 
     const propertyId = process.env.GA_PROPERTY_ID!;
     const response = await analyticsDataClient.properties.runReport({
-      property: `properties/${propertyId}`,
+      property: propertyId,
       requestBody: {
         dateRanges: [
           {
@@ -36,10 +37,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     });
 
     const visitors = response.data.rows?.[0]?.metricValues?.[0]?.value ?? '0';
-
     res.status(200).json({ visitors });
-  } catch (error) {
-    console.error('Analytics API error:', error);
+  } catch (error: unknown) {
+    if (error instanceof Error) {
+      console.error('Analytics API error:', error.message);
+    } else {
+      console.error('Analytics API error:', error);
+    }
     res.status(500).json({ error: 'Erreur lors de la récupération des visiteurs' });
   }
 }
