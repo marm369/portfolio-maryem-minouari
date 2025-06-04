@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { google } from 'googleapis';
+import { google, analyticsdata_v1beta } from 'googleapis';
+import { JWT } from 'google-auth-library';
 
 export default async function handler(
   req: NextApiRequest,
@@ -17,9 +18,11 @@ export default async function handler(
       scopes: 'https://www.googleapis.com/auth/analytics.readonly',
     });
 
+    const client = (await auth.getClient()) as JWT;
+
     const analyticsDataClient = google.analyticsdata({
       version: 'v1beta',
-      auth: (await auth.getClient()) as any, // Type workaround if needed
+      auth: client,
     });
 
     const propertyId = process.env.GA_PROPERTY_ID!;
