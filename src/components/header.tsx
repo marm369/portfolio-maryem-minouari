@@ -9,6 +9,7 @@ const Header = () => {
   const { theme } = useTheme();
   const [isOpen, setOpen] = useState(false);
   const [isFixed, setFixed] = useState(false);
+  const [visitors, setVisitors] = useState(null);
   const [activeSection, setActiveSection] = useState("");
   const headerRef = useRef(null);
 
@@ -26,8 +27,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       setFixed(window.scrollY > 80);
-
-      // Active section detection
+  
       const sections = navItems.map((item) => item.link);
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -40,10 +40,24 @@ const Header = () => {
         }
       }
     };
-
+  
+    const fetchVisitors = async () => {
+      try {
+        const res = await fetch("/api/visitors");
+        const data = await res.json();
+        setVisitors(data.visitors);
+      } catch (err) {
+        console.error("Failed to fetch visitors:", err);
+      }
+    };
+  
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+    fetchVisitors(); 
+  
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);  
 
   return (
     <header
@@ -57,19 +71,18 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 py-3">
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="group relative">
-            <span
-              className={`text-xl sm:text-2xl font-bold inline-block ${
-                theme === "dark" ? "text-white" : "text-black"
-              }`}
-            >
-              <span className="relative z-10">Maryem</span>{" "}
-              <span className="relative">
-                Minouari
-                <span className="absolute -bottom-1 left-0 w-0 h-1 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
-              </span>
-            </span>
-          </Link>
+          <Link href="/" className="group relative flex items-center gap-3">
+          <span
+            className={`text-xl sm:text-2xl font-bold inline-block ${
+              theme === "dark" ? "text-white" : "text-black"
+            }`}
+          >
+            <span className="relative z-10">Maryem</span>{" "}
+            <span className="relative">Minouari</span>
+          </span>
+
+        </Link>
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-1">
@@ -95,14 +108,21 @@ const Header = () => {
                 )}
               </button>
             ))}
-            <button
+             <button
               className="ml-2 px-4 py-2 text-sm relative overflow-hidden group border border-blue-500 rounded-md text-blue-500 hover:text-white dark:text-blue-400 dark:hover:text-white transition-colors duration-300"
               onClick={() => scrollToSection("contact")}
             >
               <span className="relative z-10">Contact Me</span>
             </button>
-            <div className="ml-4">
+
+            {/* Grouping ThemeSwitcher + Visitors */}
+            <div className="flex items-center gap-x-4 ml-4">
               <ThemeSwitcher />
+              {visitors && (
+                <span className="relative px-3 py-1 text-sm font-semibold bg-blue-100 dark:bg-blue-800 text-blue-600 dark:text-blue-200 rounded-full shadow-sm animate-fade-in border border-blue-300 dark:border-blue-700">
+                  {visitors} visitors
+                </span>
+              )}
             </div>
           </div>
 
