@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { google, analyticsdata_v1beta } from 'googleapis';
+import { google } from 'googleapis';
 import { JWT } from 'google-auth-library';
 
 export default async function handler(
