@@ -64,10 +64,14 @@ export default function Project({ params }: { params: { slug: string } }) {
           </div>
           <div className="flex flex-col items-center justify-center w-full p-2 mt-6 lg:mt-0 lg:w-1/2">
           <Image
-              className="w-full h-full lg:max-w-3xl rounded-xl object-cover"
-              src={project.image}
-              alt={project.title}
-            />
+            className={`rounded-xl object-cover ${
+              project.dimension === 0 ? 'w-80 h-[600px]' : 'w-[700px] h-[400px]'
+            }`}
+            src={project.image}
+            alt={project.title}
+            width={project.dimension === 0 ? 320 : 700} 
+            height={project.dimension === 0 ? 600 : 400} 
+          />
             <div className="flex w-full gap-x-2 mt-4">
               {project.production && (
                 <Link
@@ -141,32 +145,29 @@ export default function Project({ params }: { params: { slug: string } }) {
         </div>
       </header>
       {project.images && project.images.length > 0 && (
-        <section className="container px-6 py-12 mx-auto">
-          <Title>Screenshots</Title>
-          <div className="flex gap-4 mt-6 pb-4 overflow-x-scroll scrollbar-hide">
-            {project.images.map((image, index) => (
-              <div
-                key={index}
-                className={`flex-shrink-0 rounded-lg overflow-hidden shadow-lg bg-gray-100 ${
-                  project.dimension === 0
-                    ? "w-80 h-[600px]"
-                    : "w-[700px] h-[400px]"
-                }`}
-              >
-                <Image
-                  src={image}
-                  alt={`Screenshot ${index + 1}`}
-                  className="w-full h-full object-fill min-w-full min-h-full"
-                  style={{
-                    maxWidth: "100%",
-                    maxHeight: "100%",
-                    aspectRatio: "16/9",
-                  }}
-                />
-              </div>
-            ))}
-          </div>
-        </section>
+     <section className="container px-6 py-12 mx-auto">
+     <Title>Screenshots</Title>
+     <div className="flex gap-4 mt-6 pb-4 overflow-x-scroll scrollbar-hide">
+       {project.images.map((image, index) => (
+         <div
+           key={index}
+           className={`relative flex-shrink-0 rounded-lg overflow-hidden shadow-lg bg-gray-100 ${
+             project.dimension === 0
+               ? "w-80 h-[600px]"
+               : "w-[700px] h-[400px]"
+           }`}
+         >
+           <Image
+             src={image}
+             alt={`Screenshot ${index + 1}`}
+             fill
+             className="object-cover"
+           />
+         </div>
+       ))}
+     </div>
+   </section>
+   
       )}
       {project.video && (
         <section className="container px-6 py-12 mx-auto">

@@ -13,45 +13,22 @@ const Header = () => {
   const headerRef = useRef(null);
 
   const navItems = [
-    {
-      label: "About Me",
-      link: "about",
-      icon: "👩‍💻",
-    },
-    {
-      label: "Resume",
-      link: "resume",
-      icon: "📄",
-    },
-    {
-      label: "Work",
-      link: "work",
-      icon: "🎨",
-    },
+    { label: "About Me", link: "about", icon: "👩‍💻" },
+    { label: "Resume", link: "resume", icon: "📄" },
+    { label: "Work", link: "work", icon: "🎨" },
   ];
 
   const toggleMenu = () => {
     setOpen(!isOpen);
-    // Add a class to the body to prevent scrolling when menu is open
-    if (!isOpen) {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
+    document.body.classList.toggle("overflow-hidden", !isOpen);
   };
 
   useEffect(() => {
     const handleScroll = () => {
-      // Header becomes fixed after scrolling
-      if (window.scrollY > 80) {
-        setFixed(true);
-      } else {
-        setFixed(false);
-      }
+      setFixed(window.scrollY > 80);
 
-      // Detect current section for active state
+      // Active section detection
       const sections = navItems.map((item) => item.link);
-
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -65,25 +42,24 @@ const Header = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header
       ref={headerRef}
-      className={`w-full transition-all duration-500 ${
+      className={`w-full transition-all duration-300 ${
         isFixed
           ? "fixed top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-gray-900/80 shadow-lg"
           : "bg-white dark:bg-gray-900"
       }`}
     >
-      <div className="container mx-auto px-4 py-3">
+      <div className="container mx-auto px-4 sm:px-6 py-3">
         <nav className="flex items-center justify-between">
+          {/* Logo */}
           <Link href="/" className="group relative">
             <span
-              className={`text-2xl font-bold inline-block ${
+              className={`text-xl sm:text-2xl font-bold inline-block ${
                 theme === "dark" ? "text-white" : "text-black"
               }`}
             >
@@ -93,39 +69,37 @@ const Header = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-1 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
               </span>
             </span>
-            <span className="sr-only">{`Maryem MINOUARI's Portfolio`}</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex lg:items-center lg:space-x-1">
+          <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item, index) => (
               <button
                 key={index}
                 onClick={() => scrollToSection(item.link)}
-                className={`relative px-4 py-2 group ${
+                className={`relative px-3 py-2 group text-sm sm:text-base ${
                   activeSection === item.link
                     ? "text-blue-500 dark:text-blue-400"
                     : "text-gray-700 dark:text-gray-200"
                 }`}
               >
                 <span className="relative z-10 flex items-center">
-                  <span className="mr-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    {item.icon}
-                  </span>
+                <span className="mr-1 opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+                  {item.icon}
+                </span>
+
                   {item.label}
                 </span>
                 {activeSection === item.link && (
                   <span className="absolute bottom-0 left-0 w-full h-1 bg-blue-500 rounded-t-md"></span>
                 )}
-                <span className="absolute inset-0 bg-gray-100 dark:bg-gray-800 rounded-md scale-0 group-hover:scale-100 transition-transform duration-300 origin-center"></span>
               </button>
             ))}
             <button
-              className="ml-2 px-5 py-2 text-sm relative overflow-hidden group border border-blue-500 rounded-md text-blue-500 hover:text-white dark:text-blue-400 dark:hover:text-white transition-colors duration-300"
+              className="ml-2 px-4 py-2 text-sm relative overflow-hidden group border border-blue-500 rounded-md text-blue-500 hover:text-white dark:text-blue-400 dark:hover:text-white transition-colors duration-300"
               onClick={() => scrollToSection("contact")}
             >
               <span className="relative z-10">Contact Me</span>
-              <span className="absolute inset-0 bg-blue-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </button>
             <div className="ml-4">
               <ThemeSwitcher />
@@ -133,90 +107,69 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="flex items-center space-x-4 lg:hidden">
+          <div className="flex items-center space-x-4 md:hidden">
             <ThemeSwitcher />
             <button
               onClick={toggleMenu}
-              type="button"
               className="w-10 h-10 flex justify-center items-center rounded-full bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none transition-colors duration-300"
               aria-label="toggle menu"
             >
-              {!isOpen ? (
-                <svg
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-5 h-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              )}
+              <div
+                className={`w-6 h-6 relative transition-transform ${
+                  isOpen ? "rotate-45" : ""
+                }`}
+              >
+                <span
+                  className={`absolute block w-full h-0.5 bg-current rounded-full transition-all ${
+                    isOpen ? "rotate-90 top-1/2" : "top-1"
+                  }`}
+                />
+                <span
+                  className={`absolute block w-full h-0.5 bg-current rounded-full ${
+                    isOpen ? "opacity-0" : "top-1/2"
+                  }`}
+                />
+                <span
+                  className={`absolute block w-full h-0.5 bg-current rounded-full transition-all ${
+                    isOpen ? "-rotate-90 top-1/2" : "bottom-1"
+                  }`}
+                />
+              </div>
             </button>
           </div>
         </nav>
       </div>
 
-      {/* Full Screen Mobile Navigation */}
+      {/* Mobile Navigation Menu */}
       <div
-        className={`fixed inset-0 z-40 bg-white dark:bg-gray-900 flex flex-col justify-center items-center transition-all duration-500 ${
-          isOpen
-            ? "opacity-100 pointer-events-auto"
-            : "opacity-0 pointer-events-none"
+        className={`fixed inset-0 z-40 bg-white dark:bg-gray-900 flex flex-col justify-center items-center transition-all duration-300 md:hidden ${
+          isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full"
         }`}
+        style={{ height: "100dvh" }}
       >
-        <div className="text-center space-y-8">
+        <div className="text-center space-y-6 w-full px-4">
           {navItems.map((item, index) => (
-            <div
-              key={index}
-              className="transform transition-transform duration-300 hover:scale-110"
-              style={{ transitionDelay: `${index * 100}ms` }}
-            >
-              <button
-                onClick={() => {
-                  scrollToSection(item.link);
-                  toggleMenu();
-                }}
-                className="text-3xl font-medium text-gray-800 dark:text-white flex items-center"
-              >
-                <span className="mr-3 text-2xl">{item.icon}</span>
-                {item.label}
-              </button>
-            </div>
-          ))}
-          <div
-            className="transform transition-transform duration-300 hover:scale-110"
-            style={{ transitionDelay: `${navItems.length * 100}ms` }}
-          >
             <button
-              className="mt-6 px-8 py-3 text-xl bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors duration-300"
+              key={index}
               onClick={() => {
-                scrollToSection("contact");
+                scrollToSection(item.link);
                 toggleMenu();
               }}
+              className="w-full py-4 text-xl font-medium text-gray-800 dark:text-white flex items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg transition-colors duration-200"
             >
-              Contact Me
+              <span className="mr-3 text-2xl">{item.icon}</span>
+              {item.label}
             </button>
-          </div>
+          ))}
+          <button
+            className="w-full max-w-xs mx-auto mt-6 px-8 py-3 text-lg bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-colors duration-300"
+            onClick={() => {
+              scrollToSection("contact");
+              toggleMenu();
+            }}
+          >
+            Contact Me
+          </button>
         </div>
       </div>
     </header>

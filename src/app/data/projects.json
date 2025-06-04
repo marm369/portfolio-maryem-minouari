@@ -1,5 +1,43 @@
 [
 {
+  "title": "Semantic data processing for SEO using AI to improve web page rankings",
+  "slug": "seo-ai-semantic-ranking",
+  "excerpt": "A platform developed with Django to enhance web page SEO through AI-powered keyword generation, SEO auditing, and meta-description generation.",
+  "overview": "This project, developed during an internship at Zum Web, aims to optimize web page rankings using artificial intelligence. It includes three main features: generating relevant keywords and their intent and search volume using BERT and Pytrends; auditing SEO compliance of web pages using BeautifulSoup; and generating meta-descriptions for web content with GPT-2. The platform provides a complete suite of tools for content creators to improve visibility on search engines.",
+  "image": "/projects/seo-ai.png",
+  "images": [
+    "/projects/seo-ai/keyword-intention.png",
+    "/projects/seo-ai/site-web-audit1.png",
+    "/projects/seo-ai/site-web-audit2.png",
+    "/projects/seo-ai/metadescription.png"
+  ],
+  "dimension": 1,
+  "category": "AI-powered Web Platform",
+  "timeline": {
+    "start": "Mai 2024",
+    "end": "July 2024"
+  },
+  "featured": true,
+  "technologies": ["Python", "Django", "Tailwind CSS", "BeautifulSoup", "GPT-2", "BERT", "NLTK", "PyTrends"],
+  "features": [
+    "Keyword generation based on user input using Google Suggest API and BERT.",
+    "Classification of search intent into categories like informational, transactional, and navigational.",
+    "Estimation of keyword search volume using Pytrends.",
+    "SEO audit of web pages evaluating tags, content structure, and accessibility.",
+    "Meta-description generation using a fine-tuned GPT-2 model.",
+    "User-friendly and responsive web interface with visual SEO feedback and suggestions."
+  ],
+  "team": [
+    {
+      "name": "Maryem Minouari",
+      "role": "Software Engineering Student at FST Mohammedia - UH2C",
+      "github": "https://github.com/marm369"
+    }
+  ],
+  "tags": ["SEO", "AI", "NLP", "GPT-2", "BERT", "Django", "BeautifulSoup", "Keyword Extraction", "Semantic Search"],
+  "github": "https://github.com/marm369/SEO-Platform"
+},  
+{
     "title": "Rental Car App",
     "slug": "rental-car-app",
     "excerpt": "A car rental application where car owners can create their stores, add cars, and allow users to search, book, and contact owners for more information.",
@@ -491,5 +529,4 @@
   "tags": ["Java", "JavaFX", "CSS", "Algorithms"],
   "github": "https://github.com/marm369/XO_MiniMax_JavaFX"
 }
-
 ]

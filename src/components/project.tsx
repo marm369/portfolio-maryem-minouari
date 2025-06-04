@@ -6,21 +6,24 @@ import Image from "next/image";
 const Project = ({ data: project }: { data: ProjectProps }) => {
   return (
     <div className="group w-full bg-white rounded-2xl shadow-xl dark:bg-gray-800 flex flex-col overflow-hidden hover:shadow-2xl transition-all duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]">
-      <div className="relative overflow-hidden">
-        <Link href={`/projects/${project.slug}`}>
+      
+      <Link href={`/projects/${project.slug}`}>
+        <div className="relative w-full h-64 overflow-hidden">
           <Image
-            className="object-cover w-full h-64 transition-transform duration-500 group-hover:scale-105"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
             src={project.image}
             alt={project.title}
+            fill
             loading="lazy"
+            sizes="(max-width: 768px) 100vw, 33vw"
           />
-        </Link>
-        <div className="absolute bottom-4 right-4 flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-blue-400 to-blue-600 dark:from-gray-800 dark:to-gray-900 rounded-full backdrop-blur-sm">
-          <span className="text-white text-sm font-medium transform transition-transform group-hover:translate-x-1">
-            {project.category} → 
-          </span>
+          <div className="absolute bottom-4 right-4 flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-blue-400 to-blue-600 dark:from-gray-800 dark:to-gray-900 rounded-full backdrop-blur-sm">
+            <span className="text-white text-sm font-medium transform transition-transform group-hover:translate-x-1">
+              {project.category} →
+            </span>
+          </div>
         </div>
-      </div>
+      </Link>
 
       <div className="flex flex-col p-6 flex-1 space-y-4">
         <Link href={`/projects/${project.slug}`}>
@@ -28,7 +31,7 @@ const Project = ({ data: project }: { data: ProjectProps }) => {
             {project.title}
           </h1>
         </Link>
-        
+
         <p className="text-gray-600 dark:text-gray-300 leading-relaxed italic border-l-4 border-blue-500 pl-4">
           {project.excerpt}
         </p>

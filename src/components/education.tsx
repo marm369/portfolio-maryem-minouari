@@ -12,21 +12,23 @@ const Education = ({ data: education }: { data: EducationProps }) => {
         {education.title}
       </span>
       <div className="flex items-center space-x-3">
-        <div className="flex-shrink-0">
-          <Image
-            className="w-12 h-12 rounded-full object-cover border-2 border-blue-200 dark:border-blue-600 hover:border-blue-500 transition-all duration-300"
-            src={education.school?.logo || '/logo/company-default.png'}
-            alt="School Logo"
-            loading="lazy"
-          />
-        </div>
+      <div className="flex-shrink-0 relative w-12 h-12">
+        <Image
+          src={education.school?.logo || "/logo/company-default.png"}
+          alt="School Logo"
+          fill
+          className="rounded-full object-cover border-2 border-blue-200 dark:border-blue-600 hover:border-blue-500 transition-all duration-300"
+          loading="lazy"
+        />
+      </div>
+
         <div className="flex-1 min-w-0">
           <h2 className="text-md font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 transition-colors duration-300">
-            {education.school?.name ?? ''}
+            {education.school?.name ?? ""}
           </h2>
           <div className="mt-1 space-y-1">
             <p className="text-sm text-gray-600 dark:text-gray-300 italic">
-              {education.school?.university ?? ''}
+              {education.school?.university ?? ""}
             </p>
             <p className="text-xs text-gray-500 dark:text-gray-400 font-mono">
               {education.startedAt} — {education.endedAt}
