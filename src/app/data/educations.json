@@ -1,5 +1,17 @@
 [
   {
+    "title": "Artificial Intelligence",
+    "type": "Master Degree",
+    "school": {
+      "name": "Faculty of Jean Perrin",
+      "logo": "/logo/artois.png",
+      "university": "Artois University",
+      "city": "Lens"
+    },
+    "startedAt": "2025",
+    "endedAt": "2026"
+  },
+  {
     "title": "Software Engineering and Computer Systems Integration",
     "type": "Engineering Degree",
     "school": {
