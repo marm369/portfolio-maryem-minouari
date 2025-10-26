@@ -1,6 +1,21 @@
 [
   {
-    "title": "Computer Science Engineer",
+    "title": "Mobile Developer",
+    "company": {
+      "name": "Adria Business & Technology",
+      "url": "https://adria-bt.com/en/",
+      "logo": "/logo/adria.png",
+      "location": "Casablanca, Morocco"
+    },
+    "type": "Hybrid",
+    "startedAt": "February 2025",
+    "endedAt": "May 2025",
+    "employment_type": "End Of Study Internship",
+    "skills": ["Xcode", "Swift", "SwiftUI", "REST APIs", "Rasa"],
+    "overview": "Developing an iOS mobile application using Swift and UIKit, designed as an interactive demonstration of Adria Business & Technology’s proposed solutions. The app simulated key banking processes — such as checkbook requests, money transfers, and card and account management — allowing clients to visualize the functionality of their future product before the start of custom development."
+  },
+  {
+    "title": "IA Developer",
     "company": {
       "name": "Zum Web",
       "url": "https://zum-web.ch/",
@@ -15,18 +30,27 @@
     "overview": "Developing a platform with Django, featuring three main functionalities: generating relevant keywords and phrases for a given topic along with their intention and search volume, analyzing web pages to assess their compliance with SEO rules, and generating meta-descriptions for various content."
   },
   {
-    "title": "Mobile Developer",
+    "title": "Intern in Oceanographic Data Management",
     "company": {
-      "name": "Adria Business & Technology",
-      "url": "https://adria-bt.com/en/",
-      "logo": "/logo/adria.png",
-      "location": "Casablanca, Morocco"
+      "name": "National Institute of Fisheries Research (INRH)",
+      "url": "https://www.inrh.ma/inrh/",
+      "logo": "/logo/inrh.jpg",
+      "location": "Tangier, Morocco"
     },
-    "type": "Hybrid",
-    "startedAt": "Feb 2024",
-    "endedAt": "Present",
-    "employment_type": "End Of Study Internship",
-    "skills": ["Xcode", "Swift", "SwiftUI", "REST APIs"],
-    "overview": ""
+    "type": "On-site",
+    "startedAt": "July 2023",
+    "endedAt": "August 2023",
+    "employment_type": "Observation and Application Internship",
+    "skills": [
+      "SQL",
+      "PL/SQL",
+      "Matlab",
+      "Python",
+      "Power BI",
+      "Database Management",
+      "Data Analysis",
+      "Data Quality and Integrity"
+    ],
+    "overview": "Contributed to the management, processing, and analysis of oceanographic data at INRH Tangier. Assisted in the setup and optimization of database management processes, ensured data quality and integrity, and supported the visualization and analysis of scientific data."
   }
 ]
