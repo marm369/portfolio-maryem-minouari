@@ -1,62 +1,161 @@
 [
-{
-  "title": "Semantic data processing for SEO using AI to improve web page rankings",
-  "slug": "seo-ai-semantic-ranking",
-  "excerpt": "A platform developed with Django to enhance web page SEO through AI-powered keyword generation, SEO auditing, and meta-description generation.",
-  "overview": "This project, developed during an internship at Zum Web, aims to optimize web page rankings using artificial intelligence. It includes three main features: generating relevant keywords and their intent and search volume using BERT and Pytrends; auditing SEO compliance of web pages using BeautifulSoup; and generating meta-descriptions for web content with GPT-2. The platform provides a complete suite of tools for content creators to improve visibility on search engines.",
-  "image": "/projects/seo-ai.png",
-  "images": [
-    "/projects/seo-ai/keyword-intention.png",
-    "/projects/seo-ai/site-web-audit1.png",
-    "/projects/seo-ai/site-web-audit2.png",
-    "/projects/seo-ai/metadescription.png"
-  ],
-  "dimension": 1,
-  "category": "AI-powered Web Platform",
-  "timeline": {
-    "start": "Mai 2024",
-    "end": "July 2024"
+  {
+    "title": "Adria E-Banking: Modular Digital Banking Application",
+    "slug": "adria-e-banking-application",
+    "excerpt": "An interactive demonstration application developed to showcase customizable digital banking solutions using microservices and intelligent assistance.",
+    "overview": "In a constantly evolving banking environment, Adria — a company specializing in digital solutions for banks — aims to deliver personalized and secure digital platforms. The Adria E-Banking project was developed to address the complexity of adapting general banking modules to each client’s specific needs. It serves as an interactive demo application designed to help banks visualize their future solutions before the final implementation. Built with a microservices architecture using Spring Boot for the backend and UIKit for the frontend, the platform ensures scalability, security, and smooth integration. Native iOS development ensures optimal performance and security. The system integrates strong authentication, encrypted communication (HTTPS), fine-grained permission management, and a detailed logging service for traceability and compliance. Additionally, an AI-powered chatbot assists users in navigating features, answering questions, and improving self-service support.",
+    "image": "/projects/adria-app.jpg",
+    "images": [
+      "/projects/adria-app/adria1.jpg",
+      "/projects/adria-app/adria2.jpg",
+      "/projects/adria-app/adria3.jpg",
+      "/projects/adria-app/adria4.jpg",
+      "/projects/adria-app/adria5.jpg",
+      "/projects/adria-app/adria6.jpg",
+      "/projects/adria-app/adria7.jpg",
+      "/projects/adria-app/adria8.jpg",
+      "/projects/adria-app/adria9.jpg",
+      "/projects/adria-app/adria10.jpg",
+      "/projects/adria-app/adria11.jpg",
+      "/projects/adria-app/adria12.jpg",
+      "/projects/adria-app/adria13.jpg",
+      "/projects/adria-app/adria14.jpg",
+      "/projects/adria-app/adria15.jpg",
+      "/projects/adria-app/adria16.jpg",
+      "/projects/adria-app/adria17.jpg",
+      "/projects/adria-app/adria18.jpg",
+      "/projects/adria-app/adria19.jpg",
+      "/projects/adria-app/adria20.jpg",
+      "/projects/adria-app/adria21.jpg",
+      "/projects/adria-app/adria22.jpg",
+      "/projects/adria-app/adria23.jpg"
+    ],
+    "dimension": 0,
+    "category": "Digital Banking Application",
+    "timeline": {
+      "start": "Feb 2025",
+      "end": "June 2025"
+    },
+    "featured": true,
+    "technologies": [
+      "Spring Boot",
+      "Microservices",
+      "UIKit",
+      "iOS (Swift)",
+      "HTTPS Encryption",
+      "JWT Authentication",
+      "Chatbot AI",
+      "Rasa"
+    ],
+    "features": [
+      "Microservices-based backend architecture for modularity and scalability.",
+      "Secure authentication and encrypted communications via HTTPS.",
+      "Fine-grained access and authorization management for users and roles.",
+      "Comprehensive logging system ensuring full user and system event traceability.",
+      "AI-powered chatbot for intelligent user assistance and support.",
+      "Native iOS development ensuring performance and stability.",
+      "Interactive demo mode allowing banks to visualize and customize their digital platform before deployment."
+    ],
+    "team": [
+      {
+        "name": "Maryem Minouari",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/marm369"
+      }
+    ],
+    "tags": [
+      "E-Banking",
+      "Spring Boot",
+      "Microservices",
+      "UIKit",
+      "iOS",
+      "Security",
+      "Chatbot",
+      "Digital Transformation",
+      "AI Assistance",
+      "Rasa"
+    ],
+    "github": "https://github.com/marm369/Adria-Ebanking"
   },
-  "featured": true,
-  "technologies": ["Python", "Django", "Tailwind CSS", "BeautifulSoup", "GPT-2", "BERT", "NLTK", "PyTrends"],
-  "features": [
-    "Keyword generation based on user input using Google Suggest API and BERT.",
-    "Classification of search intent into categories like informational, transactional, and navigational.",
-    "Estimation of keyword search volume using Pytrends.",
-    "SEO audit of web pages evaluating tags, content structure, and accessibility.",
-    "Meta-description generation using a fine-tuned GPT-2 model.",
-    "User-friendly and responsive web interface with visual SEO feedback and suggestions."
-  ],
-  "team": [
-    {
-      "name": "Maryem Minouari",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/marm369"
-    }
-  ],
-  "tags": ["SEO", "AI", "NLP", "GPT-2", "BERT", "Django", "BeautifulSoup", "Keyword Extraction", "Semantic Search"],
-  "github": "https://github.com/marm369/SEO-Platform"
-},  
-{
+  {
+    "title": "Semantic data processing for SEO using AI to improve web page rankings",
+    "slug": "seo-ai-semantic-ranking",
+    "excerpt": "A platform developed with Django to enhance web page SEO through AI-powered keyword generation, SEO auditing, and meta-description generation.",
+    "overview": "This project, developed during an internship at Zum Web, aims to optimize web page rankings using artificial intelligence. It includes three main features: generating relevant keywords and their intent and search volume using BERT and Pytrends; auditing SEO compliance of web pages using BeautifulSoup; and generating meta-descriptions for web content with GPT-2. The platform provides a complete suite of tools for content creators to improve visibility on search engines.",
+    "image": "/projects/seo-ai.png",
+    "images": [
+      "/projects/seo-ai/keyword-intention.png",
+      "/projects/seo-ai/site-web-audit1.png",
+      "/projects/seo-ai/site-web-audit2.png",
+      "/projects/seo-ai/metadescription.png"
+    ],
+    "dimension": 1,
+    "category": "AI-powered Web Platform",
+    "timeline": {
+      "start": "Mai 2024",
+      "end": "July 2024"
+    },
+    "featured": true,
+    "technologies": [
+      "Python",
+      "Django",
+      "Tailwind CSS",
+      "BeautifulSoup",
+      "GPT-2",
+      "BERT",
+      "NLTK",
+      "PyTrends"
+    ],
+    "features": [
+      "Keyword generation based on user input using Google Suggest API and BERT.",
+      "Classification of search intent into categories like informational, transactional, and navigational.",
+      "Estimation of keyword search volume using Pytrends.",
+      "SEO audit of web pages evaluating tags, content structure, and accessibility.",
+      "Meta-description generation using a fine-tuned GPT-2 model.",
+      "User-friendly and responsive web interface with visual SEO feedback and suggestions."
+    ],
+    "team": [
+      {
+        "name": "Maryem Minouari",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/marm369"
+      }
+    ],
+    "tags": [
+      "SEO",
+      "AI",
+      "NLP",
+      "GPT-2",
+      "BERT",
+      "Django",
+      "BeautifulSoup",
+      "Keyword Extraction",
+      "Semantic Search"
+    ],
+    "github": "https://github.com/marm369/SEO-Platform"
+  },
+  {
     "title": "Rental Car App",
     "slug": "rental-car-app",
     "excerpt": "A car rental application where car owners can create their stores, add cars, and allow users to search, book, and contact owners for more information.",
     "overview": "Rental Car App is a car rental platform where car owners can create their own stores and add cars for rent. Users can browse rental agencies by store, contact owners for details, and request car reservations. The app provides a filtering system to search for vehicles based on various criteria. It is developed with NestJS for the backend, React Native with Expo for the frontend, PostgreSQL as the database, Firebase for notifications, and WebSocket for real-time messaging.",
     "image": "/projects/rental-car.png",
-    "images": ["/projects/rental-car-app/onboarding1.png",
-             "/projects/rental-car-app/onboarding2.png",
-             "/projects/rental-car-app/onboarding3.png",
-             "/projects/rental-car-app/login.png",
-             "/projects/rental-car-app/signup.png",
-             "/projects/rental-car-app/create-agency.png",
-             "/projects/rental-car-app/agency-details.png",
-             "/projects/rental-car-app/add-car.png",
-             "/projects/rental-car-app/car-details.png",
-             "/projects/rental-car-app/map.png",
-             "/projects/rental-car-app/reservation1.png",
-             "/projects/rental-car-app/reservation2.png",
-             "/projects/rental-car-app/reservation3.png",
-             "/projects/rental-car-app/chat.png"],
+    "images": [
+      "/projects/rental-car-app/onboarding1.png",
+      "/projects/rental-car-app/onboarding2.png",
+      "/projects/rental-car-app/onboarding3.png",
+      "/projects/rental-car-app/login.png",
+      "/projects/rental-car-app/signup.png",
+      "/projects/rental-car-app/create-agency.png",
+      "/projects/rental-car-app/agency-details.png",
+      "/projects/rental-car-app/add-car.png",
+      "/projects/rental-car-app/car-details.png",
+      "/projects/rental-car-app/map.png",
+      "/projects/rental-car-app/reservation1.png",
+      "/projects/rental-car-app/reservation2.png",
+      "/projects/rental-car-app/reservation3.png",
+      "/projects/rental-car-app/chat.png"
+    ],
     "video": "/projects/rental-car-app/rental-car-app.mp4",
     "dimension": 0,
     "category": "Mobile Application",
@@ -65,7 +164,14 @@
       "end": "Jan 2025"
     },
     "featured": true,
-    "technologies": ["NestJS", "React Native", "Expo", "PostgreSQL", "Firebase", "WebSocket"],
+    "technologies": [
+      "NestJS",
+      "React Native",
+      "Expo",
+      "PostgreSQL",
+      "Firebase",
+      "WebSocket"
+    ],
     "features": [
       "Car owners can create stores and add rental cars.",
       "Users can browse agencies by store.",
@@ -89,444 +195,485 @@
     ],
     "tags": ["NestJS", "React Native", "PostgreSQL", "Firebase", "WebSocket"],
     "github": "https://github.com/marm369/car_rental_app_front"
-},
-{
-  "title": "FitNest App",
-  "slug": "fitnest-app",
-  "excerpt": "A mobile application for discovering, joining, and organizing sports events, integrating geolocation, health tracking, and social interactions.",
-  "overview": "FitNest App is a sports and wellness application designed to help users find and participate in sports events based on their location and preferences. Users can create personalized profiles, join local sports groups, and receive recommendations for nearby events using advanced geolocation with PostGIS. The app also offers a personal dashboard, health tracking features (sleep, nutrition, and stress monitoring), and social interactions, enabling users to share their experiences. The platform is built with a Spring Boot backend, a Flutter frontend, and real-time data analytics tools.",
-  "image": "/projects/fitnest.png",
-  "images": ["/projects/fitnest-app/login.jpg",
-  "/projects/fitnest-app/forgetpassword.jpg",
-  "/projects/fitnest-app/signin1.jpg",
-  "/projects/fitnest-app/signin2.jpg",
-  "/projects/fitnest-app/signin3.jpg",
-    "/projects/fitnest-app/home.jpg",
-  "/projects/fitnest-app/events.jpg",
-  "/projects/fitnest-app/eventd.jpg",
-  "/projects/fitnest-app/itineraire.jpg", 
-  "/projects/fitnest-app/participation.jpg",
-  "/projects/fitnest-app/request.jpg",
-  "/projects/fitnest-app/map.jpg",
-  "/projects/fitnest-app/notif.jpg",
-  "/projects/fitnest-app/feedback.jpg"
-],
-"dimension": 0,
-  "category": "Mobile Application",
-  "timeline": {
-    "start": "Oct 2024",
-    "end": "Dec 2024"
   },
-  "featured": true,
-  "technologies": ["Java", "Spring Boot", "PostgreSQL", "PostGIS", "Flutter", "JWT", "OAuth2"],
-  "features": [
-    "Search and participate in sports events based on location and preferences.",
-    "User profile creation and customization.",
-    "Advanced geolocation and tracking system using PostGIS for event recommendations.",
-    "Personal dashboard with event history and tailored recommendations.",
-    "Health and wellness tracking: sleep, nutrition, and stress monitoring with personalized suggestions.",
-    "Create and manage sports events.",
-    "Social interactions: create local sports groups and share experiences."
-  ],
-  "team": [
-    {
-      "name": "Maryem Minouari",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/marm369"
+  {
+    "title": "FitNest App",
+    "slug": "fitnest-app",
+    "excerpt": "A mobile application for discovering, joining, and organizing sports events, integrating geolocation, health tracking, and social interactions.",
+    "overview": "FitNest App is a sports and wellness application designed to help users find and participate in sports events based on their location and preferences. Users can create personalized profiles, join local sports groups, and receive recommendations for nearby events using advanced geolocation with PostGIS. The app also offers a personal dashboard, health tracking features (sleep, nutrition, and stress monitoring), and social interactions, enabling users to share their experiences. The platform is built with a Spring Boot backend, a Flutter frontend, and real-time data analytics tools.",
+    "image": "/projects/fitnest.png",
+    "images": [
+      "/projects/fitnest-app/login.jpg",
+      "/projects/fitnest-app/forgetpassword.jpg",
+      "/projects/fitnest-app/signin1.jpg",
+      "/projects/fitnest-app/signin2.jpg",
+      "/projects/fitnest-app/signin3.jpg",
+      "/projects/fitnest-app/home.jpg",
+      "/projects/fitnest-app/events.jpg",
+      "/projects/fitnest-app/eventd.jpg",
+      "/projects/fitnest-app/itineraire.jpg",
+      "/projects/fitnest-app/participation.jpg",
+      "/projects/fitnest-app/request.jpg",
+      "/projects/fitnest-app/map.jpg",
+      "/projects/fitnest-app/notif.jpg",
+      "/projects/fitnest-app/feedback.jpg"
+    ],
+    "dimension": 0,
+    "category": "Mobile Application",
+    "timeline": {
+      "start": "Oct 2024",
+      "end": "Dec 2024"
     },
-    {
-      "name": "Meriem Oulja",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/merylee924"
-    },
-    {
-      "name": "Khaoula Abassi",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/Wahya1"
-    },
-    {
-      "name": "Ouissal Allam",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/Ouissal0"
-    }
-  ],
-  "tags": ["Spring Boot", "Flutter", "PostgreSQL", "PostGIS", "JWT", "OAuth2"],
-  "github": "https://github.com/marm369/fitnest_project"
-},
-{
-  "title": "E-commerce Site",
-  "slug": "ecommerce-java-ee",
-  "excerpt": "A web-based e-commerce application developed using Java EE, enabling product inventory and order management.",
-  "overview": "This project is a web-based e-commerce application developed using Java EE, Servlets, and JSP. It allows merchants to efficiently manage their product inventory and enables customers to place orders online. The system includes stock management features for adding, modifying, and deleting products, as well as an order management system with a shopping cart and order validation.",
-  "image": "/projects/ecommerce.png",
-  "images": ["/projects/ecommerce-jee/home.png","/projects/ecommerce-jee/panier.png","/projects/ecommerce-jee/gestion.png"],
-  "dimension": 1,
-  "category": "Web Application",
-  "timeline": {
-    "start": "Apr 2024",
-    "end": "Apr 2024"
+    "featured": true,
+    "technologies": [
+      "Java",
+      "Spring Boot",
+      "PostgreSQL",
+      "PostGIS",
+      "Flutter",
+      "JWT",
+      "OAuth2"
+    ],
+    "features": [
+      "Search and participate in sports events based on location and preferences.",
+      "User profile creation and customization.",
+      "Advanced geolocation and tracking system using PostGIS for event recommendations.",
+      "Personal dashboard with event history and tailored recommendations.",
+      "Health and wellness tracking: sleep, nutrition, and stress monitoring with personalized suggestions.",
+      "Create and manage sports events.",
+      "Social interactions: create local sports groups and share experiences."
+    ],
+    "team": [
+      {
+        "name": "Maryem Minouari",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/marm369"
+      },
+      {
+        "name": "Meriem Oulja",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/merylee924"
+      },
+      {
+        "name": "Khaoula Abassi",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/Wahya1"
+      },
+      {
+        "name": "Ouissal Allam",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/Ouissal0"
+      }
+    ],
+    "tags": [
+      "Spring Boot",
+      "Flutter",
+      "PostgreSQL",
+      "PostGIS",
+      "JWT",
+      "OAuth2"
+    ],
+    "github": "https://github.com/marm369/fitnest_project"
   },
-  "featured": true,
-  "technologies": ["Java EE", "Servlets", "JSP", "MySQL"],
-  "features": [
-    "Inventory management: add, modify, and delete products.",
-    "Product listing and search by name or category.",
-    "Add products to the shopping cart with quantity adjustment.",
-    "Order placement and validation with customer details.",
-    "Order summary displaying purchased items and total cost.",
-    "User-friendly and responsive interface."
-  ],
-  "team": [
-    {
-      "name": "Maryem Minouari",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/marm369"
-    }
-  ],
-  "tags": ["Java EE", "JSP", "Servlets", "MySQL"],
-  "github": "https://github.com/marm369/Ecommerce"
-},
-{
-  "title": "Centralization and Classification of Chicago City Traffic",
-  "slug": "centralization-and-classification-of-chicago-city-traffic",
-  "excerpt": "Web portal for analyzing and visualizing traffic centrality in Chicago, developed during Object/IoT Technologies workshop.",
-  "overview": "The Centralization and Classification of Chicago City Traffic is a web-based portal built as part of the Object/IoT Technologies workshop. This project offers dynamic traffic analysis by leveraging modern mapping tools and clustering algorithms to visualize traffic flows in Chicago City. Users can explore traffic data through interactive maps, filter it by time slots, and uncover critical insights about central traffic patterns.\n\nThe system makes use of AGNES clustering to classify traffic flows efficiently, along with Leaflet.js to visualize it through interactive maps. Its responsive design ensures accessibility across devices, delivering a seamless experience for global users with multi-language support.",
-  "image": "/projects/traffic-centrality.png",
-  "images": ["/projects/centralite/dataset-chicago.png",
-  "/projects/centralite/centralite-3h.png",
-  "/projects/centralite/centralite-17h.png",
-  "/projects/centralite/publics1.png",
-  "/projects/centralite/publics2.png",
-  "/projects/centralite/chemin-1.png",
-  "/projects/centralite/chemin-2.jpg",
-  "/projects/centralite/chemin-3.png",
-  "/projects/centralite/chemin-4.png", 
-  "/projects/centralite/clustering-6h.png",
-  "/projects/centralite/clustering-17h.png",
-  "/projects/centralite/clustering-midi.png"
-],
-"video": "/projects/centralite/centralite-demo.mp4",
-"dimension": 1,
-  "category": "Web Portal",
-  "timeline": {
-    "start": "Feb 2024",
-    "end": "Mar 2024"
+  {
+    "title": "E-commerce Site",
+    "slug": "ecommerce-java-ee",
+    "excerpt": "A web-based e-commerce application developed using Java EE, enabling product inventory and order management.",
+    "overview": "This project is a web-based e-commerce application developed using Java EE, Servlets, and JSP. It allows merchants to efficiently manage their product inventory and enables customers to place orders online. The system includes stock management features for adding, modifying, and deleting products, as well as an order management system with a shopping cart and order validation.",
+    "image": "/projects/ecommerce.png",
+    "images": [
+      "/projects/ecommerce-jee/home.png",
+      "/projects/ecommerce-jee/panier.png",
+      "/projects/ecommerce-jee/gestion.png"
+    ],
+    "dimension": 1,
+    "category": "Web Application",
+    "timeline": {
+      "start": "Apr 2024",
+      "end": "Apr 2024"
+    },
+    "featured": true,
+    "technologies": ["Java EE", "Servlets", "JSP", "MySQL"],
+    "features": [
+      "Inventory management: add, modify, and delete products.",
+      "Product listing and search by name or category.",
+      "Add products to the shopping cart with quantity adjustment.",
+      "Order placement and validation with customer details.",
+      "Order summary displaying purchased items and total cost.",
+      "User-friendly and responsive interface."
+    ],
+    "team": [
+      {
+        "name": "Maryem Minouari",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/marm369"
+      }
+    ],
+    "tags": ["Java EE", "JSP", "Servlets", "MySQL"],
+    "github": "https://github.com/marm369/Ecommerce"
   },
-  "featured": true,
-  "technologies": ["C++", "Leaflet", "Bootstrap", "JSON", "Python", "K-means","A*"],
-  "features": [
-    "Interactive Map Visualization: Users can zoom and pan through traffic maps for a detailed view of NYC traffic patterns.",
-    "Advanced Data Filters: Filter traffic data by year, month, day, and time slots to explore trends across different timeframes.",
-    "Color-Coded Clusters: Traffic clusters are visually represented using color codes to highlight areas of congestion or smooth traffic.",
-    "Real-Time Traffic Flow Insights: Clickable map markers reveal detailed traffic information and central points."
-  ],
-  "team": [
-    {
-      "name": "Maryem Minouari",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/marm369"
+  {
+    "title": "Centralization and Classification of Chicago City Traffic",
+    "slug": "centralization-and-classification-of-chicago-city-traffic",
+    "excerpt": "Web portal for analyzing and visualizing traffic centrality in Chicago, developed during Object/IoT Technologies workshop.",
+    "overview": "The Centralization and Classification of Chicago City Traffic is a web-based portal built as part of the Object/IoT Technologies workshop. This project offers dynamic traffic analysis by leveraging modern mapping tools and clustering algorithms to visualize traffic flows in Chicago City. Users can explore traffic data through interactive maps, filter it by time slots, and uncover critical insights about central traffic patterns.\n\nThe system makes use of AGNES clustering to classify traffic flows efficiently, along with Leaflet.js to visualize it through interactive maps. Its responsive design ensures accessibility across devices, delivering a seamless experience for global users with multi-language support.",
+    "image": "/projects/traffic-centrality.png",
+    "images": [
+      "/projects/centralite/dataset-chicago.png",
+      "/projects/centralite/centralite-3h.png",
+      "/projects/centralite/centralite-17h.png",
+      "/projects/centralite/publics1.png",
+      "/projects/centralite/publics2.png",
+      "/projects/centralite/chemin-1.png",
+      "/projects/centralite/chemin-2.jpg",
+      "/projects/centralite/chemin-3.png",
+      "/projects/centralite/chemin-4.png",
+      "/projects/centralite/clustering-6h.png",
+      "/projects/centralite/clustering-17h.png",
+      "/projects/centralite/clustering-midi.png"
+    ],
+    "video": "/projects/centralite/centralite-demo.mp4",
+    "dimension": 1,
+    "category": "Web Portal",
+    "timeline": {
+      "start": "Feb 2024",
+      "end": "Mar 2024"
     },
-    {
-      "name": "Meriem Oulja",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/merylee924"
-    }, 
-    {
-      "name": "Aya Bourmaila",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com"
-    },
-    {
-      "name": "Salma Ikzbi",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/ikezbi"
-    }
-  ],
-  "tags": ["C++", "Leaflet","Python", "K-means","A*"],
-  "github": "https://github.com/marm369/CartographieCentralit-"
-},
-{
-  "title": "Busway Ticket Chatbot",
-  "slug": "busway-ticket-chatbot",
-  "excerpt": "Innovative web app for seamless busway ticket reservations, using Neo4j to manage complex data relationships.",
-  "overview": "The Busway Ticket Chatbot is a cutting-edge web application developed as part of the Object Technology/IoT Workshop. It simplifies busway ticket reservations by leveraging a Neo4j graph database to efficiently manage complex data relationships, such as bus schedules, stations, and drivers. This project enhances the user experience by incorporating an AIML-powered chatbot, enabling a conversational interface for booking tickets and obtaining travel information.\n\nThe goal was to build a system that offers users a seamless, intuitive, and engaging booking experience while maintaining sophisticated backend data management. The chatbot interacts with users conversationally, transforming the traditional booking process into an easy, interactive journey.",
-  "image": "/projects/busway-ticket-chatbot.png",
-  "images":["/projects/busway/add-bus.png",
-  "/projects/busway/add-conductor.png",
-  "/projects/busway/add-voyage.png",
-  "/projects/busway/associate-ctob.png",
-  "/projects/busway/available-voyages.png",
-  "/projects/busway/book.png",
-  "/projects/busway/display.png",
-  "/projects/busway/horaire-voyage.png",
-  "/projects/busway/map.png",
-  "/projects/busway/reservation.png",
-  "/projects/busway/search.png",
-  "/projects/busway/voyages.png",
-  "/projects/busway/ticket.png",
-  "/projects/busway/chatbot1.png",
-  "/projects/busway/chatbot2.jpg",
-  "/projects/busway/chatbot3.jpg"
-],
-  "video": "/projects/busway/busway-demo.mp4",
-  "dimension": 1,
-  "category": "Desktop Application",
-  "timeline": {
-    "start": "Feb 2024",
-    "end": "Mar 2024"
+    "featured": true,
+    "technologies": [
+      "C++",
+      "Leaflet",
+      "Bootstrap",
+      "JSON",
+      "Python",
+      "K-means",
+      "A*"
+    ],
+    "features": [
+      "Interactive Map Visualization: Users can zoom and pan through traffic maps for a detailed view of NYC traffic patterns.",
+      "Advanced Data Filters: Filter traffic data by year, month, day, and time slots to explore trends across different timeframes.",
+      "Color-Coded Clusters: Traffic clusters are visually represented using color codes to highlight areas of congestion or smooth traffic.",
+      "Real-Time Traffic Flow Insights: Clickable map markers reveal detailed traffic information and central points."
+    ],
+    "team": [
+      {
+        "name": "Maryem Minouari",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/marm369"
+      },
+      {
+        "name": "Meriem Oulja",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/merylee924"
+      },
+      {
+        "name": "Aya Bourmaila",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com"
+      },
+      {
+        "name": "Salma Ikzbi",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/ikezbi"
+      }
+    ],
+    "tags": ["C++", "Leaflet", "Python", "K-means", "A*"],
+    "github": "https://github.com/marm369/CartographieCentralit-"
   },
-  "featured": true,
-  "technologies": ["Spring Boot", "Neo4j", "AIML", "Docker"],
-  "features": [
-    "Trip Visualization: Users can explore available trips with detailed route information, including departure and arrival times.",
-    "Online Reservation System: Provides a hassle-free online ticket booking experience, available 24/7.",
-    "Dynamic Data Management with Neo4j: The system utilizes Neo4j to manage relationships between buses, drivers, and stations, ensuring accurate data and real-time updates.",
-    "AIML-Powered Chatbot: The chatbot offers a conversational interface, making ticket booking more engaging and personal."
-  ],
-  "team": [
-    {
-      "name": "Maryem Minouari",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/marm369"
+  {
+    "title": "Busway Ticket Chatbot",
+    "slug": "busway-ticket-chatbot",
+    "excerpt": "Innovative web app for seamless busway ticket reservations, using Neo4j to manage complex data relationships.",
+    "overview": "The Busway Ticket Chatbot is a cutting-edge web application developed as part of the Object Technology/IoT Workshop. It simplifies busway ticket reservations by leveraging a Neo4j graph database to efficiently manage complex data relationships, such as bus schedules, stations, and drivers. This project enhances the user experience by incorporating an AIML-powered chatbot, enabling a conversational interface for booking tickets and obtaining travel information.\n\nThe goal was to build a system that offers users a seamless, intuitive, and engaging booking experience while maintaining sophisticated backend data management. The chatbot interacts with users conversationally, transforming the traditional booking process into an easy, interactive journey.",
+    "image": "/projects/busway-ticket-chatbot.png",
+    "images": [
+      "/projects/busway/add-bus.png",
+      "/projects/busway/add-conductor.png",
+      "/projects/busway/add-voyage.png",
+      "/projects/busway/associate-ctob.png",
+      "/projects/busway/available-voyages.png",
+      "/projects/busway/book.png",
+      "/projects/busway/display.png",
+      "/projects/busway/horaire-voyage.png",
+      "/projects/busway/map.png",
+      "/projects/busway/reservation.png",
+      "/projects/busway/search.png",
+      "/projects/busway/voyages.png",
+      "/projects/busway/ticket.png",
+      "/projects/busway/chatbot1.png",
+      "/projects/busway/chatbot2.jpg",
+      "/projects/busway/chatbot3.jpg"
+    ],
+    "video": "/projects/busway/busway-demo.mp4",
+    "dimension": 1,
+    "category": "Desktop Application",
+    "timeline": {
+      "start": "Feb 2024",
+      "end": "Mar 2024"
     },
-    {
-      "name": "Meriem Oulja",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/merylee924"
-    }
-  ],
-  "tags": ["Spring Boot", "Neo4j", "AIML", "Docker"],
-  "github": "https://github.com/marm369/Busway"
-},
-{
-  "title": "G-PAIE . Payroll Management Platform",
-  "slug": "G-PAIE-payroll-management-platform",
-  "excerpt": "Full-stack web app for managing organizational payroll processes with PHP, Bootstrap and MySQL.",
-  "overview": "Developed full-stack web applications for managing payroll processes within an organization.",
-  "image": "/projects/gpaie.png",
-  "images":["/projects/gpaie-web/home.png",
-  "/projects/gpaie-web/login.png",
-  "/projects/gpaie-web/employee.png",
-  "/projects/gpaie-web/employee-dashboard.png",
-  "/projects/gpaie-web/employee-espace.png",
-  "/projects/gpaie-web/employee-conge.png",
-  "/projects/gpaie-web/employee-info.png",
-  "/projects/gpaie-web/rh-dashboard.png",
-  "/projects/gpaie-web/rp-dashboard.png",
-  "/projects/gpaie-web/bulletin-paie.png",
-  "/projects/gpaie-web/bulletin-paie-pdf.png",
-  "/projects/gpaie-web/bulletin-paie-excel.png"],
-  "dimension":1,
-  "category": "Web Application",
-  "timeline": {
-    "start": "May 2023",
-    "end": "Jun 2023"
+    "featured": true,
+    "technologies": ["Spring Boot", "Neo4j", "AIML", "Docker"],
+    "features": [
+      "Trip Visualization: Users can explore available trips with detailed route information, including departure and arrival times.",
+      "Online Reservation System: Provides a hassle-free online ticket booking experience, available 24/7.",
+      "Dynamic Data Management with Neo4j: The system utilizes Neo4j to manage relationships between buses, drivers, and stations, ensuring accurate data and real-time updates.",
+      "AIML-Powered Chatbot: The chatbot offers a conversational interface, making ticket booking more engaging and personal."
+    ],
+    "team": [
+      {
+        "name": "Maryem Minouari",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/marm369"
+      },
+      {
+        "name": "Meriem Oulja",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/merylee924"
+      }
+    ],
+    "tags": ["Spring Boot", "Neo4j", "AIML", "Docker"],
+    "github": "https://github.com/marm369/Busway"
   },
-  "featured": true,
-  "features": [
-    "User authentication and authorization for secure access.",
-    "Employee management with detailed profiles and salary information.",
-    "Payroll processing with automated calculations and tax deductions."
-  ],
-  "technologies": ["PHP", "Bootstrap", "jQuery", "MySQL"],
-  "team": [
-    {
-      "name": "Maryem Minouari",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/marm369"
+  {
+    "title": "G-PAIE . Payroll Management Platform",
+    "slug": "G-PAIE-payroll-management-platform",
+    "excerpt": "Full-stack web app for managing organizational payroll processes with PHP, Bootstrap and MySQL.",
+    "overview": "Developed full-stack web applications for managing payroll processes within an organization.",
+    "image": "/projects/gpaie.png",
+    "images": [
+      "/projects/gpaie-web/home.png",
+      "/projects/gpaie-web/login.png",
+      "/projects/gpaie-web/employee.png",
+      "/projects/gpaie-web/employee-dashboard.png",
+      "/projects/gpaie-web/employee-espace.png",
+      "/projects/gpaie-web/employee-conge.png",
+      "/projects/gpaie-web/employee-info.png",
+      "/projects/gpaie-web/rh-dashboard.png",
+      "/projects/gpaie-web/rp-dashboard.png",
+      "/projects/gpaie-web/bulletin-paie.png",
+      "/projects/gpaie-web/bulletin-paie-pdf.png",
+      "/projects/gpaie-web/bulletin-paie-excel.png"
+    ],
+    "dimension": 1,
+    "category": "Web Application",
+    "timeline": {
+      "start": "May 2023",
+      "end": "Jun 2023"
     },
-    {
-      "name": "Meriem Oulja",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/merylee924"
-    },
-    {
-      "name": "Nassima Chtouki",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com"
-    },
-    {
-      "name": "Ibtissam Abdouni",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com"
-    }
-  ],
-  "tags": ["PHP", "Bootstrap", "jQuery", "MySQL"],
-  "github": "https://github.com/marm369/GestionPaie"
-},
-{
-  "title": "Checkers Game",
-  "slug": "checkers-game",
-  "excerpt": "Desktop Checkers game developed with C and GTK+ for a rich graphical user experience.",
-  "overview": "Developed desktop game \"Checkers\" using C programming language and GTK graphical user interface.",
-  "image": "/projects/checkers.png",
-  "images": ["/projects/checkers/game-start.jpg",
-             "/projects/checkers/settings.jpg",
-             "/projects/checkers/resume-game.jpg",
-             "/projects/checkers/player-name.jpg",
-             "/projects/checkers/game-board.jpg"],
-  "dimension":1,   
-  "category": "Desktop Game",
-  "timeline": {
-    "start": "Mar 2023",
-    "end": "May 2023"
+    "featured": true,
+    "features": [
+      "User authentication and authorization for secure access.",
+      "Employee management with detailed profiles and salary information.",
+      "Payroll processing with automated calculations and tax deductions."
+    ],
+    "technologies": ["PHP", "Bootstrap", "jQuery", "MySQL"],
+    "team": [
+      {
+        "name": "Maryem Minouari",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/marm369"
+      },
+      {
+        "name": "Meriem Oulja",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/merylee924"
+      },
+      {
+        "name": "Nassima Chtouki",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com"
+      },
+      {
+        "name": "Ibtissam Abdouni",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com"
+      }
+    ],
+    "tags": ["PHP", "Bootstrap", "jQuery", "MySQL"],
+    "github": "https://github.com/marm369/GestionPaie"
   },
-  "featured": true,
-  "technologies": ["C Programming", "GTK+"],
-  "features": [
-    "Classic Checkers gameplay with a rich graphical user interface.",
-    "Single-player mode against AI for challenging gameplay.",
-    "Two-player mode for competitive fun.",
-    "AI with varying difficulty levels to suit all players.",
-    "AI vs AI mode for automated gameplay."
-  ],
-  "team": [
-    {
-      "name": "Maryem Minouari",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/marm369"
-    },
-    {
-      "name": "Meriem Oulja",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/merylee924"
-    }
-  ],
-  "tags": ["C", "GTK+", "Algorithms", "Data Structures"],
-  "github": "https://github.com/marm369/checkers-game"
-},
-{
-  "title": "Interface Builder",
-  "slug": "interface-builder-app",
-  "excerpt": "A desktop application for creating graphical user interfaces using GTK+ and generating XML-based layouts with FXML.",
-  "overview": "Interface Builder is a desktop application that enables users to design graphical user interfaces by adding, modifying, and organizing widgets such as buttons, input fields, and containers. The designed UI is structured hierarchically in an XML file while maintaining parent-child relationships. Users can visualize the interface, save the generated XML file, and open existing files for further modifications. The application is built with C and GTK+ for GUI rendering, using FXML for layout definition.",
-  "image": "/projects/interface-builder.png",
-  "images": ["/projects/interface-builder/interface0.png",
-  "/projects/interface-builder/interface1.png",
-  "/projects/interface-builder/interface2.png",
-  "/projects/interface-builder/interface3.png",
-  "/projects/interface-builder/interface4.png"],
-  "video": "/projects/interface-builder/interface-builder-demo.mp4",
-  "dimension": 1,
-  "category": "Desktop Application",
-  "timeline": {
-    "start": "May 2024",
-    "end": "Jun 2024"
-  },
-  "featured": true,
-  "technologies": ["C", "GTK+", "XML"],
-  "features": [
-    "Add widgets (buttons, inputs, containers, etc.) to the interface.",
-    "Modify widget properties such as size, position, and style.",
-    "Display and manage the hierarchy of UI components.",
-    "Real-time visualization of the designed interface.",
-    "Save the interface layout as an XML file.",
-    "Open and edit existing XML files to modify or add new widgets."
-  ],
-  "team": [
-    {
-      "name": "Maryem Minouari",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/marm369"
-    }
-  ],
-  "tags": ["C", "GTK+", "XML"],
-  "github": "https://github.com/marm369/interface-builder"
-},
-{
-  "title": "Rental Car Management App",
-  "slug": "rental-car-management-app",
-  "excerpt": "A rental car management application developed using Java and Swing.",
-  "overview": "This project is a car rental management application developed in Java and Swing. It enables the management of available vehicles, customers, and their reservations.",
-  "image": "/projects/rental-car-app.png",
-  "images": ["/projects/rental-car/add-car.png","/projects/rental-car/fetch-cars.png","/projects/rental-car/criteria-search.png","/projects/rental-car/return-car.png"],
-  "dimension": 1,
-  "category": "Desktop Application",
-  "timeline": {
-    "start": "Dec 2023",
-    "end": "Dec 2023"
-  },
-  "featured": true,
-  "technologies": ["Java", "Swing"],
-  "features": [
-    "Add vehicles to the rental fleet.",
-    "Remove vehicles from the fleet.",
-    "Manage customers with the ability to add new clients.",
-    "Search for available vehicles based on criteria (brand, price, production date).",
-    "Process vehicle returns after the rental period."
-  ],
-  "team": [
-    {
-      "name": "Maryem Minouari",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/marm369"
-    },
-    {
-      "name": "Meriem Oulja",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/merylee924"
-    }
-  ],
-  "tags": ["Java", "Swing"],
-  "github": "https://github.com/marm369/LocationVoiture"
-},
-{
-  "title": "Sudoku Game",
-  "slug": "sudoku-game-gtk",
-  "excerpt": "A Sudoku-solving application developed in C++ with GTK+, featuring random grid generation and interactive assistance.",
-  "overview": "Sudoku Game is a Sudoku-solving application developed in C++ using the GTK+ graphical interface toolkit. It allows users to play randomly generated Sudoku grids and includes various features to enhance the user experience. The application offers multiple difficulty levels, interactive hints, and the ability to save progress.",
-  "image": "/projects/sudoku.png",
-  "category": "Desktop Application",
-  "timeline": {
-    "start": "Mar 2024",
-    "end": "Mar 2024"
-  },
-  "featured": true,
-  "technologies": ["C++", "GTK+"],
-  "features": [
-    "Three difficulty levels: Easy, Medium, Hard.",
-    "Random Sudoku grid generation.",
-    "Save and load game progress.",
-    "Hint feature to assist players.",
-    "Automatic grid solving for verification.",
-    "User-friendly interface with interactive support."
-  ],
-  "team": [
-    {
-      "name": "Maryem Minouari",
-      "role": "Software Engineering Student at FST Mohammedia - UH2C",
-      "github": "https://github.com/marm369"
-    }
-  ],
-  "tags": ["C++", "GTK+"],
-  "github": "https://github.com/marm369/SudokuGtk"
-},
-{
-  "title": "Tic-Tac-Toe Game",
-  "slug": "tic-tac-toe-game",
-  "excerpt": "A desktop Tic-Tac-Toe game developed with Java and JavaFX.",
-  "overview": "Developed a desktop Tic-Tac-Toe game using Java and JavaFX, implementing the Minimax algorithm for AI decision-making and ensuring an engaging user experience.",
-  "image": "/projects/xo.png",
-  "category": "Desktop Game",
-  "timeline": {
+  {
+    "title": "Checkers Game",
+    "slug": "checkers-game",
+    "excerpt": "Desktop Checkers game developed with C and GTK+ for a rich graphical user experience.",
+    "overview": "Developed desktop game \"Checkers\" using C programming language and GTK graphical user interface.",
+    "image": "/projects/checkers.png",
+    "images": [
+      "/projects/checkers/game-start.jpg",
+      "/projects/checkers/settings.jpg",
+      "/projects/checkers/resume-game.jpg",
+      "/projects/checkers/player-name.jpg",
+      "/projects/checkers/game-board.jpg"
+    ],
+    "dimension": 1,
+    "category": "Desktop Game",
+    "timeline": {
       "start": "Mar 2023",
       "end": "May 2023"
+    },
+    "featured": true,
+    "technologies": ["C Programming", "GTK+"],
+    "features": [
+      "Classic Checkers gameplay with a rich graphical user interface.",
+      "Single-player mode against AI for challenging gameplay.",
+      "Two-player mode for competitive fun.",
+      "AI with varying difficulty levels to suit all players.",
+      "AI vs AI mode for automated gameplay."
+    ],
+    "team": [
+      {
+        "name": "Maryem Minouari",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/marm369"
+      },
+      {
+        "name": "Meriem Oulja",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/merylee924"
+      }
+    ],
+    "tags": ["C", "GTK+", "Algorithms", "Data Structures"],
+    "github": "https://github.com/marm369/checkers-game"
   },
-  "featured": true,
-  "technologies": ["Java", "JavaFX", "CSS", "Algorithms"],
-  "features": [
+  {
+    "title": "Interface Builder",
+    "slug": "interface-builder-app",
+    "excerpt": "A desktop application for creating graphical user interfaces using GTK+ and generating XML-based layouts with FXML.",
+    "overview": "Interface Builder is a desktop application that enables users to design graphical user interfaces by adding, modifying, and organizing widgets such as buttons, input fields, and containers. The designed UI is structured hierarchically in an XML file while maintaining parent-child relationships. Users can visualize the interface, save the generated XML file, and open existing files for further modifications. The application is built with C and GTK+ for GUI rendering, using FXML for layout definition.",
+    "image": "/projects/interface-builder.png",
+    "images": [
+      "/projects/interface-builder/interface0.png",
+      "/projects/interface-builder/interface1.png",
+      "/projects/interface-builder/interface2.png",
+      "/projects/interface-builder/interface3.png",
+      "/projects/interface-builder/interface4.png"
+    ],
+    "video": "/projects/interface-builder/interface-builder-demo.mp4",
+    "dimension": 1,
+    "category": "Desktop Application",
+    "timeline": {
+      "start": "May 2024",
+      "end": "Jun 2024"
+    },
+    "featured": true,
+    "technologies": ["C", "GTK+", "XML"],
+    "features": [
+      "Add widgets (buttons, inputs, containers, etc.) to the interface.",
+      "Modify widget properties such as size, position, and style.",
+      "Display and manage the hierarchy of UI components.",
+      "Real-time visualization of the designed interface.",
+      "Save the interface layout as an XML file.",
+      "Open and edit existing XML files to modify or add new widgets."
+    ],
+    "team": [
+      {
+        "name": "Maryem Minouari",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/marm369"
+      }
+    ],
+    "tags": ["C", "GTK+", "XML"],
+    "github": "https://github.com/marm369/interface-builder"
+  },
+  {
+    "title": "Rental Car Management App",
+    "slug": "rental-car-management-app",
+    "excerpt": "A rental car management application developed using Java and Swing.",
+    "overview": "This project is a car rental management application developed in Java and Swing. It enables the management of available vehicles, customers, and their reservations.",
+    "image": "/projects/rental-car-app.png",
+    "images": [
+      "/projects/rental-car/add-car.png",
+      "/projects/rental-car/fetch-cars.png",
+      "/projects/rental-car/criteria-search.png",
+      "/projects/rental-car/return-car.png"
+    ],
+    "dimension": 1,
+    "category": "Desktop Application",
+    "timeline": {
+      "start": "Dec 2023",
+      "end": "Dec 2023"
+    },
+    "featured": true,
+    "technologies": ["Java", "Swing"],
+    "features": [
+      "Add vehicles to the rental fleet.",
+      "Remove vehicles from the fleet.",
+      "Manage customers with the ability to add new clients.",
+      "Search for available vehicles based on criteria (brand, price, production date).",
+      "Process vehicle returns after the rental period."
+    ],
+    "team": [
+      {
+        "name": "Maryem Minouari",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/marm369"
+      },
+      {
+        "name": "Meriem Oulja",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/merylee924"
+      }
+    ],
+    "tags": ["Java", "Swing"],
+    "github": "https://github.com/marm369/LocationVoiture"
+  },
+  {
+    "title": "Sudoku Game",
+    "slug": "sudoku-game-gtk",
+    "excerpt": "A Sudoku-solving application developed in C++ with GTK+, featuring random grid generation and interactive assistance.",
+    "overview": "Sudoku Game is a Sudoku-solving application developed in C++ using the GTK+ graphical interface toolkit. It allows users to play randomly generated Sudoku grids and includes various features to enhance the user experience. The application offers multiple difficulty levels, interactive hints, and the ability to save progress.",
+    "image": "/projects/sudoku.png",
+    "category": "Desktop Application",
+    "timeline": {
+      "start": "Mar 2024",
+      "end": "Mar 2024"
+    },
+    "featured": true,
+    "technologies": ["C++", "GTK+"],
+    "features": [
+      "Three difficulty levels: Easy, Medium, Hard.",
+      "Random Sudoku grid generation.",
+      "Save and load game progress.",
+      "Hint feature to assist players.",
+      "Automatic grid solving for verification.",
+      "User-friendly interface with interactive support."
+    ],
+    "team": [
+      {
+        "name": "Maryem Minouari",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/marm369"
+      }
+    ],
+    "tags": ["C++", "GTK+"],
+    "github": "https://github.com/marm369/SudokuGtk"
+  },
+  {
+    "title": "Tic-Tac-Toe Game",
+    "slug": "tic-tac-toe-game",
+    "excerpt": "A desktop Tic-Tac-Toe game developed with Java and JavaFX.",
+    "overview": "Developed a desktop Tic-Tac-Toe game using Java and JavaFX, implementing the Minimax algorithm for AI decision-making and ensuring an engaging user experience.",
+    "image": "/projects/xo.png",
+    "category": "Desktop Game",
+    "timeline": {
+      "start": "Mar 2023",
+      "end": "May 2023"
+    },
+    "featured": true,
+    "technologies": ["Java", "JavaFX", "CSS", "Algorithms"],
+    "features": [
       "Classic Tic-Tac-Toe gameplay with a modern graphical user interface.",
       "Single-player mode against an AI opponent using the Minimax algorithm.",
       "Two-player mode for local competitive gameplay."
-  ],
-  "team": [
+    ],
+    "team": [
       {
-          "name": "Maryem Minouari",
-          "role": "Software Engineering Student at FST Mohammedia - UH2C",
-          "github": "https://github.com/marm369"
+        "name": "Maryem Minouari",
+        "role": "Software Engineering Student at FST Mohammedia - UH2C",
+        "github": "https://github.com/marm369"
       }
-  ],
-  "tags": ["Java", "JavaFX", "CSS", "Algorithms"],
-  "github": "https://github.com/marm369/XO_MiniMax_JavaFX"
-}
+    ],
+    "tags": ["Java", "JavaFX", "CSS", "Algorithms"],
+    "github": "https://github.com/marm369/XO_MiniMax_JavaFX"
+  }
 ]
