@@ -79,7 +79,7 @@ export default function Home() {
                 AI Engineer | Generative AI & Machine Learning
               </h3>
               <p className="text-lg text-gray-300 mb-8">
-                Master's graduate in Artificial Intelligence, passionate about building intelligent applications and deploying AI solutions.
+                Master&apos;s graduate in Artificial Intelligence, passionate about building intelligent applications and deploying AI solutions.
                 I work across machine learning, large language models, data engineering and AI-powered applications, with a focus on turning complex problems into practical solutions.
               </p>
               <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
@@ -218,7 +218,7 @@ export default function Home() {
                     Experience
                   </h2>
                   <p className="my-2 text-gray-600 dark:text-gray-300">
-                    An overview of my professional internships and the practical experience I've gained in software engineering, artificial intelligence, and data science.
+                    An overview of my professional internships and the practical experience I&apos;ve gained in software engineering, artificial intelligence, and data science.
                   </p>
                   <div className="py-2 grid lg:grid-cols-2 gap-4 max-h-screen overflow-y-auto">
                     {experiencesLoading ? (
