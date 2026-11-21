@@ -9,26 +9,23 @@ const Experience = ({ data: experience }: { data: ExperienceProps }) => {
       <span className="block text-2xl font-bold text-blue-700 dark:text-blue-300 hover:text-blue-800 dark:hover:text-blue-200 transition-colors duration-300 cursor-pointer hover:underline">
         {experience.title}
       </span>
-
       {/* Informations sur l'entreprise */}
       <div className="flex items-center space-x-4">
-        {/* Logo de l'entreprise */}
         <a
-          href={experience.company?.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group"
-        >
-          <Image
-            className="object-cover w-12 h-12 rounded-full border-2 border-blue-200 dark:border-gray-600 group-hover:border-blue-400 dark:group-hover:border-blue-300 transition-all duration-300"
-            src={experience.company?.logo ?? "/logo/company-default.png"}
-            alt="Company Logo"
-            width={48}
-            height={48}
-            loading="lazy"
-          />
-        </a>
-
+        href={experience.company?.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group flex-shrink-0 rounded-full bg-white"
+        style={{ width: 64, height: 64, position: 'relative' }}
+      >
+        <Image
+          className="object-contain rounded-full border-2 border-blue-200 dark:border-gray-600 group-hover:border-blue-400 dark:group-hover:border-blue-300 transition-all duration-300"
+          src={experience.company?.logo ?? "/logo/company-default.png"}
+          alt="Company Logo"
+          layout="fill"
+          loading="lazy"
+        />
+      </a>
         {/* Détails de l'entreprise */}
         <div className="flex flex-col space-y-1">
           <a
@@ -53,12 +50,10 @@ const Experience = ({ data: experience }: { data: ExperienceProps }) => {
           </div>
         </div>
       </div>
-
       {/* Description de l'expérience */}
       <p className="mt-2 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
         {experience.overview}
       </p>
-
       {/* Compétences */}
       <div className="mt-auto flex flex-wrap gap-2 justify-end">
         {experience.skills.map((skill, index) => (

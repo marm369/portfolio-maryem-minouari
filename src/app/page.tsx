@@ -136,9 +136,9 @@ export default function Home() {
                 <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
                   Maryem MINOUARI
                 </h2>
-                <p className="text-blue-700 dark:text-blue-300 font-medium">
+                {/* <p className="text-blue-700 dark:text-blue-300 font-medium">
                   A passionate Computer Science Engineer from Morocco
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="w-full md:w-1/2 bg-blue-50 dark:bg-gray-700 p-6 rounded-2xl shadow-lg">
@@ -155,21 +155,21 @@ export default function Home() {
                     theme === "dark" ? "text-gray-300" : "text-gray-800"
                   }`}
                 >
-                  {`Passionate about artificial intelligence, I focus on exploring and developing intelligent solutions using machine learning, deep learning, and generative AI. I enjoy working across the AI development lifecycle, from data preparation and model development to integration and deployment.`}
+                  {`I focus on developing intelligent AI solutions using machine learning and generative AI across the whole AI lifecycle.`}
                 </p>
                 <p
                   className={`text-lg leading-relaxed ${
                     theme === "dark" ? "text-gray-300" : "text-gray-800"
                   }`}
                 >
-                  {`Through academic projects and professional experience, I've worked on diverse AI applications, including computer vision, predictive modeling, large language models, and machine translation evaluation.`}
+                  {`My experience spans computer vision, predictive modeling, large language models, and machine translation evaluation.`}
                 </p>
                 <p
                   className={`text-lg leading-relaxed ${
                     theme === "dark" ? "text-gray-300" : "text-gray-800"
                   }`}
                 >
-                  {`I'm driven by curiosity and a strong desire to turn emerging AI technologies into practical solutions that address real-world challenges.`}
+                  {`Driven by curiosity, I transform emerging AI technologies into impactful, practical solutions.`}
                 </p>
               </div>
             </div>

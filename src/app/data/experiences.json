@@ -1,5 +1,32 @@
 [
-  {
+ {
+  "title": "AI Developer",
+  "company": {
+    "name": "BPCE Solutions informatiques",
+    "url": "https://www.bpce-si.fr",
+    "logo": "/logo/BPCE-SI.png",
+    "location": "Lille, France"
+  },
+  "type": "On-site",
+  "startedAt": "April 2026",
+  "endedAt": "September 2026",
+  "employment_type": "End of Study Internship",
+  "skills": [
+    "Python",
+    "NLP",
+    "Machine Translation",
+    "LLM Evaluation",
+    "AI Agents",
+    "Text-to-SQL",
+    "LiteLLM",
+    "n8n",
+    "REST APIs",
+    "Podman",
+    "Cloud Deployment"
+  ],
+  "overview": "Contributed to the design and development of multiple AI proof-of-concepts at BPCE SI's innovation team, focusing on practical AI applications in banking environments. Key projects included optimizing an on-premise machine translation system using LibreTranslate, analyzing chatbot failures to enhance knowledge base accuracy, and developing an agent-based text-to-SQL platform leveraging database schemas and business rules for context-aware query generation."
+ },
+ {
     "title": "Mobile Developer",
     "company": {
       "name": "Adria Business & Technology",
