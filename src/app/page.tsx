@@ -76,12 +76,11 @@ export default function Home() {
                 {`Hi, I'm Maryem MINOUARI`}
               </Title>
               <h3 className="text-2xl mt-4 lg:text-3xl font-semibold mb-4 text-blue-300">
-                Computer Science Engineer
+                AI Engineer | Generative AI & Machine Learning
               </h3>
               <p className="text-lg text-gray-300 mb-8">
-                {
-                  "Let's build innovative software solutions together and unlock the full potential of technology."
-                }
+                Master's graduate in Artificial Intelligence, passionate about building intelligent applications and deploying AI solutions.
+                I work across machine learning, large language models, data engineering and AI-powered applications, with a focus on turning complex problems into practical solutions.
               </p>
               <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
                 <button
@@ -127,7 +126,7 @@ export default function Home() {
           <h4 className="text-xl font-medium text-blue-500 dark:text-blue-400 mb-2">
             About me
           </h4>
-          <Title>Passionate Computer Science Engineer</Title>
+          <Title>Artificial Intelligence Enthusiast & Engineer</Title>
         </div>
         <main className="relative z-20 max-w-7xl mx-auto md:flex md:justify-center md:items-center">
           <div className="absolute w-full bg-blue-100 dark:bg-gray-700 -z-10 h-36 md:h-72 rounded-2xl" />
@@ -149,14 +148,28 @@ export default function Home() {
                     theme === "dark" ? "text-gray-300" : "text-gray-800"
                   }`}
                 >
-                  {`I'm Maryem MINOUARI, a Computer Science student with a strong foundation in software engineering.`}
+                  {`I'm Maryem MINOUARI, an engineer with a background in Software Engineering and a Master's degree in Artificial Intelligence.`}
                 </p>
                 <p
                   className={`text-lg leading-relaxed ${
                     theme === "dark" ? "text-gray-300" : "text-gray-800"
                   }`}
                 >
-                  {`Fascinated by machine learning and neural networks, I'm passionate about leveraging artificial intelligence to build intelligent systems that solve complex problems. From deep learning to data-driven innovations, I aspire to create impactful solutions that push the boundaries of technology.`}
+                  {`Passionate about artificial intelligence, I focus on exploring and developing intelligent solutions using machine learning, deep learning, and generative AI. I enjoy working across the AI development lifecycle, from data preparation and model development to integration and deployment.`}
+                </p>
+                <p
+                  className={`text-lg leading-relaxed ${
+                    theme === "dark" ? "text-gray-300" : "text-gray-800"
+                  }`}
+                >
+                  {`Through academic projects and professional experience, I've worked on diverse AI applications, including computer vision, predictive modeling, large language models, and machine translation evaluation.`}
+                </p>
+                <p
+                  className={`text-lg leading-relaxed ${
+                    theme === "dark" ? "text-gray-300" : "text-gray-800"
+                  }`}
+                >
+                  {`I'm driven by curiosity and a strong desire to turn emerging AI technologies into practical solutions that address real-world challenges.`}
                 </p>
               </div>
             </div>
@@ -205,8 +218,7 @@ export default function Home() {
                     Experience
                   </h2>
                   <p className="my-2 text-gray-600 dark:text-gray-300">
-                    My professional experience includes working as a software
-                    engineer at various companies.
+                    An overview of my professional internships and the practical experience I've gained in software engineering, artificial intelligence, and data science.
                   </p>
                   <div className="py-2 grid lg:grid-cols-2 gap-4 max-h-screen overflow-y-auto">
                     {experiencesLoading ? (

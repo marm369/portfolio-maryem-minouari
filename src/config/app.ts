@@ -28,7 +28,7 @@ export const resumes = {
 export const contact = {
   email: "minouarim@gmail.com",
   phone: "+33743607372",
-  address: "Lens, France",
+  address: "Lille, France",
 }
 
 export const socials = {
